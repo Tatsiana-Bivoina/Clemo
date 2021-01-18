@@ -1,2 +1,53 @@
 @import 'fonts';
 @import 'normalize';
+@import 'settings';
+@import 'variables';
+
+.header {
+    padding-top: 51px;
+    padding-bottom: 65px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        color: $color-black;
+        font-size: 30px;
+        font-family: $font-bold;
+        letter-spacing: -.2px;
+        text-transform: lowercase;
+
+        &:hover {
+            color: $color-grey;
+        }
+        &:focus {
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+}
+
+.nav {
+    ul {
+        display: flex;
+    }
+    li {
+        margin-left: 36px;
+        list-style-type: none;
+    }
+    a {
+        color: $color-grey;
+        font-family: $font-light;
+        text-transform: lowercase;
+
+        &:hover {
+            color: $color-black;
+            font-weight: 600;
+        }
+        &:focus {
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+} 
