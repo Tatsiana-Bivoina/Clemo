@@ -1,0 +1,36 @@
+{
+  "name": "clemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tatsiana-Bivoina/Clemo.git"
+  },
+  "author": "Tatsiana Bivoina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tatsiana-Bivoina/Clemo/issues"
+  },
+  "homepage": "https://github.com/Tatsiana-Bivoina/Clemo#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "reset-css": "^5.0.1"
+  }
+}
