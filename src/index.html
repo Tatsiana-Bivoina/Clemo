@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <title>Clemo</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="wr-intro">
-        <header class="header">
-            <div class="wrapper">
-                <a href="#" class="logo">clemo.</a>
-                <nav class="nav">
-                    <ul>
-                        <li><a href="#">about us</a></li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">works</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
-                    </ul>
-                </nav>
+      <header class="header">
+        <div class="wrapper">
+          <a href="#" class="logo">clemo.</a>
+          <nav class="nav">
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">works</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="wr-home">
+        <div class="wrapper">
+          <div class= "swiper-container">
+            <div class="swiper-wrapper">
+                <div class="slide-1 swiper-slide">
+                    <p>we are clemo.</p>
+                    <h1 class="title">professionals 
+                        in the creative industries</h1>
+                    <a href="#" class="btn">get in touch</a>
+                </div>
+                <div class="slide-2 swiper-slide">
+                    <p>we are clemo.</p>
+                    <h1 class="title">we create the best projects
+                      for the best companies!</h1>
+                    <a href="#" class="btn">get in touch</a>
+                </div>
+                <div class="slide-3 swiper-slide">
+                    <p>we are clemo.</p>
+                    <h1 class="title">professionals
+                        in the creative industries</h1>
+                    <a href="#" class="btn">get in touch</a></div>
             </div>
-        </header>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
     </section>
-</body>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.min.js"></script>
+  </body>
 </html>

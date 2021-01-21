@@ -56,7 +56,7 @@ gulp.task('copy:css', function() {
 });
 
 gulp.task('js', function js() {
-    return gulp.src('./src/js/**/*.js')
+    return gulp.src('./src/js/main.js')
         .pipe(plumber({
         errorHandler: function (error) {
             console.log(error.message);
@@ -64,6 +64,11 @@ gulp.task('js', function js() {
         }}))
         .pipe(concat('main.js'))
         .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('./src/js/'));
+});
+
+gulp.task('copy:js', function js() {
+    return gulp.src('./src/js/main.min.js')
         .pipe(uglify())
         .pipe(gulp.dest('./dist/js/'));
 });
@@ -101,13 +106,14 @@ gulp.task('watch',function watchFiles() {
     gulp.watch('./src/**/*.html', gulp.series ('html'));
     gulp.watch('./src/scss/**/*.scss', gulp.series('css'));
     gulp.watch('./src/css/**/*.css', gulp.series('copy:css'));
-    gulp.watch('./src/js/**/*.js', gulp.series('js'));
+    gulp.watch('./src/js/**/main.js', gulp.series('js'));
+    gulp.watch('./src/js/**/*min.js', gulp.series('copy:js'));
 });
 
 
 
 gulp.task('default', gulp.series(
-    'clean', 
-    gulp.parallel('html', 'copy:css','js', 'copy'),
+    'clean', 'js',
+    gulp.parallel('html', 'copy:css', 'copy:js', 'copy'),
     gulp.parallel('watch', 'browserS')
 ));
