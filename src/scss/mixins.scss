@@ -1,4 +1,4 @@
-@mixin btn{
+@mixin btn {
     font-family: $font-light;
     font-size: 18px;
     text-transform: lowercase;
@@ -9,4 +9,14 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+}
+
+@mixin block-title {
+    font-family: $font-hairline;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 0;
+    margin-bottom: 76px;
 }

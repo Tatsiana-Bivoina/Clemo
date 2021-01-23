@@ -6,5 +6,12 @@ var swiper = new Swiper('.swiper-container', {
       bulletClass: 'swiper-pagination-bullet',
       clickable: true,
     },
-    slideToClickedSlide: true,
+    mousewheel: {
+      invert: true,
+    },
+    autoplay: {
+      delay: 3000,
+      stopOnLastSlide: true,
+    },
+    grabCursor: true,
   });

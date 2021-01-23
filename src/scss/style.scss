@@ -4,7 +4,7 @@
 @import 'variables';
 @import 'mixins';
 
-// header
+// HEADER
 .header {
     padding-top: 51px;
     padding-bottom: 56px;
@@ -56,13 +56,13 @@
     }
 } 
 
-// wr-home
+// WR-HOME
 
 .wr-home {
-    margin-bottom: 83px;
+    margin-bottom: 74px;
 }
 
-// slider
+// SLIDER
 .swiper-container {
     width: 100%;
     height: 520px;
@@ -100,6 +100,7 @@
         font-size: 24px;
         white-space: pre-line;
         text-align: center;
+        text-transform: lowercase;
         line-height: 1.3;
         margin-bottom: 71px;
     }
@@ -160,3 +161,143 @@
 .swiper-pagination-bullet-active {
     background-color: $color-black;
 }
+
+// WHAT WE DO?
+.wr-what-we-do {
+    h2 {
+        @include block-title;
+    }
+}
+
+.block-creative-kitchen,
+.block-art-installation,
+.block-print-design {
+    display: flex;
+    margin-bottom: 88px;
+}
+
+.creative-kitchen-img,
+.art-installation-img,
+.print-design-img {
+    width: 49%;
+    height: 560px;
+    margin-top: 12px;
+}
+
+.creative-kitchen-img img,
+.art-installation-img img,
+.print-design-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.creative-kitchen-content,
+.art-installation-content,
+.print-design-content {
+    width: 43%;
+    margin-left: 8%;
+
+    .creative-kitchen-title,
+    .art-installation-title,
+    .print-design-title {
+        margin-bottom: 42px;
+    }
+
+    .kitchen-title,
+    .art-title,
+    .design-title {
+        font-family: $font-light;
+        font-size: 30px;
+        color: $color-black;
+        white-space: pre-wrap;
+        position: relative;
+        &:after {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            width: 55px;
+            background: $color-black;
+            position: absolute;
+            bottom: -21px;
+            left: 4px;
+          }
+
+        &:hover,
+        &:hover ~ span {
+            color: $color-pink;
+        }
+
+        &:focus,
+        &:focus ~ span {
+            outline: none;
+            text-decoration: underline;
+            color: $color-pink;
+        }
+    }
+
+    span {
+        font-family: $font-bold;
+        font-size: 48px;
+    }
+
+    .creative-kitchen-paragraph-1,
+    .art-installation-paragraph-1,
+    .print-design-paragraph-1 {
+        margin-bottom: 28px;
+    }
+
+    p {
+        font-family: $font-light;
+        font-size: 18px;
+        margin-left: 4px;
+        line-height: 1.5;
+    }
+
+    .creative-kitchen-paragraph-2,
+    .art-installation-paragraph-2,
+    .print-design-paragraph-2 {
+        margin-bottom: 38px;
+    }
+
+    .btn {
+        @include btn;
+        color: $color-black;
+        border: 1px solid $color-light-gray;
+        margin-left: 5px;
+        &:hover {
+            border: 1px solid $color-black;
+        }
+        &:focus {
+            outline: none;
+            border: 1px solid $color-black;
+        }
+    }
+}
+
+.art-installation-content {
+    margin-right: 8%;
+    margin-left: 0;
+
+    .art-title {
+        &::after {
+            bottom: -22px;
+            left: 0;
+        }
+    }
+
+    p {
+        margin-left: 2px;
+    }
+
+    .art-installation-paragraph-2 {
+        margin-bottom: 41px;
+    }
+
+    .btn {
+        margin-left: 2px;
+    }
+}
+
+
