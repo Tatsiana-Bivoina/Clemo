@@ -1,14 +1,32 @@
-@mixin btn {
-    font-family: $font-light;
-    font-size: 18px;
-    text-transform: lowercase;
-    width: 168px;
-    height: 51px;
-    border-radius: 36px;
+@mixin btn-dark {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 168px;
+    height: 51px;
     box-sizing: border-box;
+    font-family: $font-light;
+    font-size: 18px;
+    text-transform: lowercase;
+    color: $color-light-gray;
+    background-color: $color-black;
+    border: 2px solid $color-black;
+    border-radius: 36px;
+}
+
+@mixin btn-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 168px;
+    height: 51px;
+    box-sizing: border-box;
+    font-family: $font-light;
+    font-size: 18px;
+    text-transform: lowercase;
+    color: $color-black;
+    border: 1px solid $color-light-gray;
+    border-radius: 36px;
 }
 
 @mixin block-title {
