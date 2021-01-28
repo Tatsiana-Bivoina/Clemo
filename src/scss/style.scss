@@ -12,15 +12,15 @@
     .wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        
+        align-items: center; 
     }
+
     .logo {
-        color: $color-black;
         font-size: 30px;
         font-family: $font-bold;
         letter-spacing: -.2px;
         text-transform: lowercase;
+        color: $color-black;
 
         &:hover {
             color: $color-grey;
@@ -36,18 +36,20 @@
     ul {
         display: flex;
     }
+
     li {
         margin-left: 36px;
         list-style-type: none;
     }
+
     a {
-        color: $color-grey;
         font-family: $font-light;
         text-transform: lowercase;
+        color: $color-grey;
 
         &:hover {
-            color: $color-black;
             font-weight: 600;
+            color: $color-black;
         }
         &:focus {
             outline: none;
@@ -69,46 +71,46 @@
 }
 
 .swiper-slide {
-    height: 520px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 520px;
 
     p {
-        color: $color-black;
+        position: relative;
+        margin-top: 130px;
+        margin-bottom: 26px;
         font-family: $font-bold;
         font-size: 48px;
         text-transform: lowercase;
         letter-spacing: .2px;
-        margin-top: 130px;
-        margin-bottom: 26px;
-        position: relative;
+        color: $color-black;
+       
         &:after {
             content: '';
+            position: absolute;
+            bottom: -21px;
+            left: 50%;
+            transform: translate(-50%);
             display: block;
             height: 2px;
             width: 55px;
             background: $color-black;
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%);
-            bottom: -21px;
           }
     }
+
     h1 {
+        margin-bottom: 71px;
         font-family: $font-light;
         font-size: 24px;
         white-space: pre-line;
         text-align: center;
         text-transform: lowercase;
         line-height: 1.3;
-        margin-bottom: 71px;
     }
+
     .btn {
-        @include btn;
-        color: $color-light-gray;
-        background-color: $color-black;
-        border: 2px solid $color-black;
+        @include  btn-dark;
     
         &:hover {
             background-color: $color-pink;
@@ -193,8 +195,6 @@
 .print-design-img img {
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center bottom;
 }
 
 .creative-kitchen-content,
@@ -212,20 +212,21 @@
     .kitchen-title,
     .art-title,
     .design-title {
+        position: relative;
         font-family: $font-light;
         font-size: 30px;
-        color: $color-black;
         white-space: pre-wrap;
-        position: relative;
+        color: $color-black;
+        
         &:after {
             content: '';
+            position: absolute;
+            bottom: -21px;
+            left: 4px;
             display: inline-block;
             height: 2px;
             width: 55px;
             background: $color-black;
-            position: absolute;
-            bottom: -21px;
-            left: 4px;
           }
 
         &:hover,
@@ -253,9 +254,9 @@
     }
 
     p {
+        margin-left: 4px;
         font-family: $font-light;
         font-size: 18px;
-        margin-left: 4px;
         line-height: 1.5;
     }
 
@@ -266,9 +267,7 @@
     }
 
     .btn {
-        @include btn;
-        color: $color-black;
-        border: 1px solid $color-light-gray;
+        @include btn-light;
         margin-left: 5px;
         &:hover {
             border: 1px solid $color-black;
@@ -312,10 +311,7 @@
         margin-bottom: 88px;
     }
     .btn {
-        @include btn;
-        color: $color-light-gray;
-        background-color: $color-black;
-        border: 2px solid $color-black;
+        @include  btn-dark;
         position: absolute;
         left: 50%;
         transform: translate(-50%);
@@ -391,8 +387,19 @@
     .work-6 {
         width: 100%;
         height: 100%;
-        background-size: cover;
-        background-position: center bottom;
+        transition: 1s;
+    }
+
+    .work-1:hover,
+    .work-2:hover,
+    .work-3:hover,
+    .work-4:hover,
+    .work-5:hover,
+    .work-6:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        transform: translateY(-15px);
+        filter: brightness(40%);
     }
 }
 
