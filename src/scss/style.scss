@@ -4,6 +4,12 @@
 @import 'variables';
 @import 'mixins';
 
+
+// WR-INTRO
+.wr-intro {
+    margin-bottom: 74px;
+}
+
 // HEADER
 .header {
     padding-top: 51px;
@@ -58,23 +64,20 @@
     }
 } 
 
-// WR-HOME
-
-.wr-home {
-    margin-bottom: 74px;
-}
-
-// SLIDER
-.swiper-container {
+// WR-HOME SLIDER
+.intro-slider {
     width: 100%;
     height: 520px;
 }
 
-.swiper-slide {
+.slide-1,
+.slide-2,
+.slide-3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 520px;
+    width: 100%;
+    height: 500px;
 
     p {
         position: relative;
@@ -166,6 +169,7 @@
 
 // WHAT WE DO?
 .wr-what-we-do {
+    margin-bottom: 72px;
     h2 {
         @include block-title;
     }
@@ -195,6 +199,8 @@
 .print-design-img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center top;
 }
 
 .creative-kitchen-content,
@@ -300,12 +306,14 @@
 
     .btn {
         margin-left: 2px;
+        @include btn-light;
     }
 }
 
 
 // WR-OUR-BEST-WORK
 .wr-our-best-work {
+    margin-bottom: 145px;
     h2 {
         @include block-title;
         margin-bottom: 88px;
@@ -340,7 +348,7 @@
     'block-1 block-2 block-3'
     'block-4 block-2 block-6'
     'block-4 block-5 block-6';
-    margin-bottom: 51px;
+    margin-bottom: 44px;
     position: relative;
 
     .photo-block-1 {
@@ -367,18 +375,6 @@
         grid-area: block-6;
     }
     
-    .photo-block-1,
-    .photo-block-3,
-    .photo-block-5 {
-        height: 364px;
-    }
-    
-    .photo-block-2,
-    .photo-block-4,
-    .photo-block-6 {
-        height: 590px;
-    }
-    
     .work-1,
     .work-2,
     .work-3,
@@ -387,6 +383,8 @@
     .work-6 {
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: center top;
         transition: 1s;
     }
 
@@ -403,5 +401,132 @@
     }
 }
 
+// WR-BEST-TEAM
+.wr-best-team {
+    background-color: $color-pink;
+    margin-bottom: 77px;
+    .wrapper {
+        padding-top: 73px;
+        padding-bottom: 87px;
+    }
+    h2 {
+        @include block-title;
+        margin-bottom: 46px;
+    }
+}
 
+.best-team-slider {
+    width: 100%;
+    height: 100%;
+}
 
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slide-container,
+.slide-container-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 23px;
+    margin-left: 23px;
+    width: 250px;
+    height: 434px;
+    .name {
+        position: relative;
+        margin-top: 15px;
+        margin-bottom: 4px;
+        font-size: 40px;
+        font-family: $font-bold;
+        text-transform: lowercase;
+        white-space: pre-wrap;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -11px;
+            left: 50%;
+            transform: translate(-50%);
+            display: block;
+            height: 2px;
+            width: 55px;
+            background: $color-black;
+        }
+    }
+    
+    .work {
+        margin-bottom: 73px;
+        font-size: 18px;
+        font-family: $font-light;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.team-member {
+    width: 168px;
+    height: 168px;
+    box-sizing: border-box;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }    
+}
+
+.slide-container-center {
+    .work {
+        margin-bottom: 30px;
+    }
+}
+
+// SLIDER BUTTONS 
+.swiper-button-next, 
+.swiper-button-prev {
+    top: 128px;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.best-team-slider .swiper-button-prev::after,
+.swiper-button-next::after {
+    color: #fff;
+    font-size: 53px;
+}
+
+.swiper-button-prev:hover::after, 
+.swiper-button-next:hover::after {
+    color: black;
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus,
+.swiper-button-prev:focus::after,
+.swiper-button-next:focus::after {
+    outline: none;
+    color: $color-black;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets 
+.swiper-pagination-bullet {
+    margin: 0px 8px;
+}
+
+.swiper-pagination-bullet:focus {
+    outline: none;
+    transform: scale(1.5);
+}
