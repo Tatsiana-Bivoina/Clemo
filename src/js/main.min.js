@@ -15,9 +15,6 @@ var swiperWrIntro = new Swiper('.intro-slider', {
     },
     grabCursor: true,
   });
-  swiperWrIntro.on('click', function(){
-    alert('hello');
-  });
 
   var swiperWrBestTeam = new Swiper('.best-team-slider', {
     slideClass:'team-members',
@@ -35,4 +32,19 @@ var swiperWrIntro = new Swiper('.intro-slider', {
       prevEl: '.swiper-button-prev',
     },
     grabCursor: true,
-  });
+});
+
+  function showGetInTouch1(event) {
+    event.preventDefault();
+    document.getElementById("wr-get-in-touch").style.display="none";
+    document.getElementById("wr-get-in-touch-1").style.display="block";
+  }
+
+  function showGetInTouch(event) {
+    event.preventDefault();
+    document.getElementById("formInput1").value = "";
+    document.getElementById("formInput2").value = "";
+    document.getElementById("textarea").value = "";
+    document.getElementById("wr-get-in-touch-1").style.display="none";
+    document.getElementById("wr-get-in-touch").style.display="block";
+  }
