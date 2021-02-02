@@ -544,7 +544,7 @@
 .wr-get-in-touch,
 .wr-get-in-touch-1 {
     height: 629px;
-    margin-bottom: 50px;
+    margin-bottom: 26px;
     padding-top: 74px;
     background-image: 
         linear-gradient(to top, rgba(0,0,0,.9), rgba(0,0,0,.9)),
@@ -745,5 +745,22 @@
             outline: none;
             border: 1px solid $color-black;
         }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .copyright {
+        margin-bottom: 0;
+        font-family: $font-bold;
+        font-size: 18px;
+    }
+    .rights {
+        margin-top: 7px;
+        font-family: $font-light;
+        font-size: 14px;
     }
 }
