@@ -6,7 +6,7 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+/>
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Clemo</title>
   </head>
@@ -15,7 +15,10 @@
       <header class="header">
         <div class="wrapper">
           <a href="#" class="logo">clemo.</a>
-          <nav class="nav">
+          <div id="burger" class="burger-menu">
+            <span></span>
+          </div>
+          <nav id="navigation" class="nav">
             <ul>
               <li><a href="#">about us</a></li>
               <li><a href="#">services</a></li>
@@ -31,22 +34,30 @@
           <div class= "swiper-container intro-slider">
             <div class="swiper-wrapper">
                 <div class="slide-1 swiper-slide">
+                  <div class="slide-1-container">
                     <p>we are clemo.</p>
                     <h1 class="title">professionals 
                         in the creative industries</h1>
                     <a href="#" class="btn">get in touch</a>
+                  </div>
                 </div>
                 <div class="slide-2 swiper-slide">
+                  <div class="slide-2-container">
                     <p>we are clemo.</p>
                     <h1 class="title">we create the best projects
                       for the best companies!</h1>
                     <a href="#" class="btn">get in touch</a>
+                  </div>
                 </div>
                 <div class="slide-3 swiper-slide">
+                  <div class="slide-3-container">
                     <p>we are clemo.</p>
                     <h1 class="title">professionals
                         in the creative industries</h1>
-                    <a href="#" class="btn">get in touch</a></div>
+                    <a href="#" class="btn">get in touch</a>
+                  </div>
+                </div>
+                    
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -142,6 +153,7 @@
     <section class="wr-best-team">
       <div class="wrapper">
         <h2>best team</h2>
+        <!-- slider -->
         <div class="swiper-container best-team-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide team-members">
@@ -225,6 +237,94 @@
         </div>
       </div>
     </section>
+    <section class="wr-clients-says">
+      <div class="wrapper">
+        <h2>clients say’s</h2>
+        <div id="brandNewBrand" class="clients-text-block">
+          <div class="brand-description">
+            <p class="brand-name">mark spenser</p>
+            <p class="brand-job">designer</p>
+          </div>
+          <div class="clients-text">
+            <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+        <div id="brandClementina" class="clients-text-block-off">
+          <div class="brand-description">
+            <p class="brand-name">clementina smith</p>
+            <p class="brand-job">chief-cooker</p>
+          </div>
+          <div class="clients-text">
+            <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+        <div id="brandFrankSims" class="clients-text-block-off">
+          <div class="brand-description">
+            <p class="brand-name">frank sims</p>
+            <p class="brand-job">photographer</p>
+          </div>
+          <div class="clients-text">
+            <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+        <div id="brandCooper" class="clients-text-block-off">
+          <div class="brand-description">
+            <p class="brand-name">ann cooper</p>
+            <p class="brand-job">artist</p>
+          </div>
+          <div class="clients-text">
+            <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </div>
+        <!-- slider -->
+        <div class="swiper-container clients-says-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide brand">
+              <div class="brand-container" onclick="findTextBlock('brandNewBrand', this)">
+                <img src="./media/main_page/clients say`s/brand-1.png" alt="brand">
+              </div>
+            </div>
+            <div class="swiper-slide brand">
+              <div class="brand-container" onclick="findTextBlock('brandClementina', this)">
+                <img src="./media/main_page/clients say`s/brand-2.png" alt="brand">
+              </div>
+            </div>
+            <div class="swiper-slide brand">
+              <div class="brand-container" onclick="findTextBlock('brandFrankSims', this)">
+                <img src="./media/main_page/clients say`s/brand-3.png" alt="brand">
+              </div>
+            </div>
+            <div class="swiper-slide brand">
+              <div class="brand-container" onclick="findTextBlock('brandCooper', this)">
+                <img src="./media/main_page/clients say`s/brand-4.png" alt="brand">
+              </div>
+            </div>
+            <div class="swiper-slide brand">
+              <div class="brand-container" onclick="findTextBlock('brandNewBrand', this)">
+                <img src="./media/main_page/clients say`s/brand-1.png" alt="brand">
+              </div>
+            </div>
+            <div class="swiper-slide brand">
+              <div class="brand-container" onclick="findTextBlock('brandClementina', this)">
+                <img src="./media/main_page/clients say`s/brand-2.png" alt="brand">
+              </div>
+            </div>
+            <!-- <div class="swiper-slide brand">
+              <div class="brand-container">
+                <img src="./media/main_page/clients say`s/brand-3.png" alt="brand">
+              </div>
+            </div>
+            <div class="swiper-slide brand">
+              <div class="brand-container">
+                <img src="./media/main_page/clients say`s/brand-4.png" alt="brand">
+              </div>
+            </div> -->
+          </div> 
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
     <section id="wr-get-in-touch" class="wr-get-in-touch">
       <div class="wrapper">
         <h2>get in touch</h2>
@@ -304,7 +404,9 @@
                 <textarea id="textarea" class="textarea" required></textarea>
                 <label class="textarea-label">your message</label>
               </div>
-              <input type="submit" class="submit" value="submit" >
+              <div class="form-item-4">
+                <input type="submit" class="submit" value="submit" >
+              </div>
             </form>
           </div>
         </div>
@@ -379,8 +481,8 @@
             <svg class="icon-check">
               <use xlink:href="./media/sprites/sprite.svg#icon-check"></use>
             </svg>
-            <p>Thank you!</p>
-            <p>Your message has been sent!</p>
+            <p class="message">Thank you!</p>
+            <p class="message">Your message has been sent!</p>
             <form onsubmit="showGetInTouch(event)">
               <input type="submit" class="submit" value="new message">
             </form>

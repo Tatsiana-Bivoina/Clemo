@@ -1,0 +1,894 @@
+@media all and (max-width: 1000px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    // wr-home
+    .header {
+        .logo {
+            margin-left: 15px;
+        }
+
+        .nav {
+            margin-right: 15px;
+        }
+    }
+    .intro-slider {
+        height: 430px;
+
+        .slide-1,
+        .slide-2,
+        .slide-3 {
+            position: relative;
+        }
+
+        .slide-1-container,
+        .slide-2-container,
+        .slide-3-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            margin-top: 0;
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    // wr-what-we-do
+    .wr-what-we-do,
+    .wr-our-best-work,
+    .wr-clients-says,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+    .block-what-we-do:nth-child(even),
+    .block-what-we-do:nth-child(odd) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .creative-kitchen,
+    .art-installation {
+        margin-bottom: 50px;
+    }
+    .creative-kitchen-content,
+    .art-installation-content,
+    .print-design-content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+
+        .btn {
+            margin: 0 auto;
+        }
+    }
+    .creative-kitchen-title,
+    .art-installation-title,
+    .print-design-title {
+        &::after {
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    .kitchen-title,
+    .art-title,
+    .design-title {
+        font-size: 30px;
+        span {
+            font-size: 40px;
+        }
+    }
+
+    // wr-our-best-work
+    .wr-our-best-work {
+        .grid-container {
+            grid-template-rows: 300px 1fr 300px;
+        }
+    }
+    
+    // wr-best-team
+    .wr-best-team {
+        .wrapper {
+            padding-bottom: 0;
+            padding-top: 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .slide-container,
+    .slide-container-center {
+        .name {
+            font-size: 34px;
+        }
+
+        .team-member {
+            width: 155px;
+            height: 155px;
+        }
+    }
+
+    // wr-clients-says
+    .clients-text-block, 
+    .clients-text-block-off {
+        margin-bottom: 10px;
+    }
+
+    .brand-name {
+        font-size: 36px;
+    }
+
+    .brand-name,
+    .brand-job {
+        margin-right: 50px;
+    }
+
+    .description {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    // wr-get-in-touch
+    .block-contacts {
+        margin-left: 15px;
+    }
+
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        .submit {
+            margin-bottom: 20px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .socials {
+            margin-bottom: 40px;
+        }
+
+        .icon-check {
+            width: 55px;
+            height: 45px;
+        }
+
+        .message {
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+    }
+    
+}
+
+
+@media all and (max-width: 780px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    // wr-home
+    .wr-intro {
+        margin-bottom: 40px;
+    }
+
+    .intro-slider {
+        height: 400px;  
+    }
+
+    .intro-slider,
+    .wr-what-we-do,
+    .wr-our-best-work {
+        .btn {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .wr-home {
+        padding-top: 80px;
+    }
+
+    .header {
+        padding-left: 5px;
+        padding-right: 5px;
+        &::before {
+            z-index: 4;
+        }
+
+        .wrapper {
+            height: 60px;
+        }
+
+        .logo {
+            z-index: 4;
+            font-size: 26px;
+        }
+    }
+    .burger-menu {
+        position: relative;
+        z-index: 4;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            right: 20px;
+            width: 100%;
+            height: 2px;
+            transition: 1s;
+            background-color: $color-grey;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+
+        &.active::before {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+
+        &.active::after {
+            transform: rotate(-45deg);
+            bottom: 9px;
+        }
+
+        span {
+            position: absolute;
+            top: 9px;
+            right: 20px;
+            width: 100%;
+            height: 2px;
+            background-color: $color-grey;
+            transition: 1s;
+        }
+
+        &.active span {
+            transform: scale(0);
+        }
+    }
+
+    .nav {
+        position: fixed;
+        top: -1040px;
+        left: 0;
+        padding-top: 70px;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: $color-pink;
+        transition: 1s;
+        &.active {
+            top: 0;
+        }
+
+        ul {
+            display: block;
+        }
+
+        li {
+            margin-left: 10px;
+            margin-bottom: 40px;
+            font-size: 24px;
+        }
+    }
+
+    // wr-what-we-do
+    .wr-what-we-do,
+    .wr-best-team {
+        margin-bottom: 40px;
+        h2 {
+            margin-bottom: 30px;
+            font-size: 56px;
+        }
+    }
+
+    // wr-our-best-work 
+    .wr-our-best-work {
+        h2 {
+        margin-bottom: 45px;
+        font-size: 56px;
+        }
+
+        .grid-container {
+            grid-template-rows: 230px 1fr 230px;
+        }
+    }
+
+    // wr-best-team
+    .wr-best-team {
+        h2 {
+        margin-bottom: 15px;
+        }
+    }
+    .slide-container,
+    .slide-container-center {
+        height: 390px;
+        .name {
+            font-size: 30px;
+        }
+
+        .team-member {
+            width: 145px;
+            height: 145px;
+        }
+    }
+    
+    // .wr-clients-says
+    .wr-clients-says,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            margin-bottom: 45px;
+            font-size: 56px;
+        }
+    }
+
+    .brand {
+        .brand-container {
+            margin-bottom: 60px;
+        }
+    }
+
+    .brand-name {
+        font-size: 30px;
+        &::after {   
+        top: 45px;
+        }
+    }
+
+    .brand-name,
+    .brand-job {
+        margin-right: 40px;
+    }
+
+    // wr-get-in-touch
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        padding-top: 20px;
+        .submit {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .adress,
+    .phone,
+    .mail {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .mail {
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        .svg-container {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .block-forms {
+        .form-item-1 {
+            margin-bottom: 20px;
+        }
+
+        .form-item-2 {
+            margin-bottom: 65px;
+        }
+
+        .form-item-3 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 40px;
+            height: 30px;
+        }
+
+        .message {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+    
+}
+
+@media all and (max-width: 650px) {
+    // wr-home
+    .intro-slider {
+        height: 350px; 
+        p {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+    }
+
+    // wr-what-we-do
+    .wr-what-we-do {
+        P {
+            font-size: 16px;
+        }
+    }
+    .wr-what-we-do,
+    .wr-our-best-work,
+    .wr-clients-says,
+    .wr-best-team,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 52px;
+        }
+    }
+
+    // wr-best-team
+    .best-team-slider {
+        .swiper-button-prev::after, 
+        .swiper-button-next::after {
+            font-size: 40px;
+        }
+    } 
+    .slide-container,
+    .slide-container-center {
+        height: 370px;
+        .name {
+            font-size: 24px;
+        }
+
+        .work {
+            font-size: 16px;
+        }
+
+        .team-member {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .slide-container-center {
+        .work {
+            margin-bottom: 40px;
+        }
+    }
+
+    // wr-clients-says
+    .clients-says-slider {
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .brand-name {
+        font-size: 26px;
+    }
+
+    .brand-name,
+    .brand-job {
+        margin-right: 10px;
+    }
+
+    .brand-job {
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    // wr-get-in-touch
+    .adress,
+    .phone,
+    .mail {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .socials {
+        .svg-container {
+            width: 30px;
+            height: 30px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .block-forms {
+        label {
+            font-size: 16px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 30px;
+            height: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    // wr-home
+    .intro-slider {
+        height: 300px; 
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+        }
+
+        p {
+            font-size: 26px;
+        }
+
+        h1 {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+    }
+
+    // wr-what-we-do
+    .wr-what-we-do,
+    .wr-our-best-work,
+    .wr-clients-says,
+    .wr-best-team,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 46px;
+        }
+    }
+
+    // wr-our-best-work
+    .wr-our-best-work {
+        .grid-container {
+            grid-template-rows: 150px 1fr 150px;
+        }
+    }
+
+    // wr-best-team
+    .slide-container,
+    .slide-container-center {
+        height: 289px;
+        .name {
+            font-size: 18px;
+        }
+
+        .work {
+            font-size: 14px;
+        }
+
+        .team-member {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .best-team-slider {
+        .swiper-button-prev::after, 
+        .swiper-button-next::after {
+            font-size: 30px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+        }
+        
+    }
+
+    // wr-clients-says
+    .clients-text-block,
+    .clients-text-block-off {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clients-text {
+        width: 100%;
+    }
+
+    .brand-description {
+        align-items: center;
+    }
+
+    .brand-name {
+        text-align: center;
+        &::after {
+            display: none;
+        }
+    }
+
+    .description {
+        margin-right: 13px;
+    }
+
+    // wr-get-in-touch
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .block-contacts,
+    .block-forms {
+        width: 100%;
+    }
+
+    .socials {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .block-forms {
+        input,
+        textarea {
+            width: 87%;
+        }
+    }
+
+    .form-item-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wr-get-in-touch-1 {
+        .block-forms {
+            text-align: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+}  
+
+@media all and (max-width: 430px) {
+    // wr-intro
+    .intro-slider {
+        height: 250px;
+        p {
+            font-size: 22px;
+        }
+
+        h1 {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }  
+
+        .btn {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+
+    // wr-what-we-do
+    .wr-what-we-do {
+        P {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .wr-what-we-do,
+    .wr-our-best-work,
+    .wr-clients-says,
+    .wr-best-team,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 42px;
+        }
+    }
+
+    .kitchen-title,
+    .art-title,
+    .design-title {
+        font-size: 28px;
+        span {
+            font-size: 34px;
+        }
+    }
+
+    .creative-kitchen-paragraph-1,
+    .art-installation-paragraph-1,
+    .print-design-paragraph-1 {
+        margin-bottom: 10px;
+    }
+
+    .creative-kitchen-paragraph-2,
+    .art-installation-paragraph-2,
+    .print-design-paragraph-2 {
+        margin-bottom: 20px;
+    }
+
+    // wr-our-best-work
+    .wr-our-best-work {
+        .grid-container {
+            grid-template-rows: 120px 1fr 120px;
+        }
+    }
+
+    // wr-best-team
+    .team-members {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .slide-container,
+    .slide-container-center {
+        height: 160px;
+        .name {
+            margin-top: 5px;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .work {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+
+        .team-member {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .best-team-slider {
+        .swiper-button-prev::after, 
+        .swiper-button-next::after {
+            font-size: 30px;
+        }
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            top: 50%;
+            transform: translate(-50%);
+        }
+
+        .swiper-button-prev {
+            left: 36px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    // wr-clients-says
+    .brand-job, 
+    .brand-name {
+        margin-right: 0;
+    }
+
+    .brand-name {
+        font-size: 22px;
+    }
+
+    // wr-get-in-touch
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        .submit {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 380px) {
+    // wr-intro
+    .intro-slider {
+        height: 220px;
+        p {
+            font-size: 20px;
+        }
+
+        h1 {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }  
+
+        .btn {
+            width: 80px;
+            height: 24px;
+            font-size: 9px;
+        }
+    }
+
+    // wr-what-we-do, wr-our-best-work
+    .wr-what-we-do,
+    .wr-our-best-work {
+        .btn {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+
+    .wr-what-we-do,
+    .wr-our-best-work,
+    .wr-clients-says,
+    .wr-best-team,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    // wr-get-in-touch
+    .block-forms {
+        input,
+        textarea {
+            width: 85%;
+        }
+
+        label {
+            font-size: 14px;
+        }
+    }
+
+    .adress,
+    .phone,
+    .mail {
+        margin-bottom: 25px;
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 30px;
+            height: 20px;
+        }
+        
+        .message {
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+}
