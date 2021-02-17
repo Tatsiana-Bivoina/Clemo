@@ -38,3 +38,77 @@
     margin-top: 0;
     margin-bottom: 76px;
 }
+
+@mixin burger-menu {
+    position: relative;
+    z-index: 4;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+
+    &::before,
+    &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    width: 100%;
+    height: 2px;
+    transition: 1s;
+    background-color: $color-grey;
+    }
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    &.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    &.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    span {
+        position: absolute;
+        top: 9px;
+        right: 20px;
+        width: 100%;
+        height: 2px;
+        background-color: $color-grey;
+        transition: 1s;
+    }
+
+    &.active span {
+        transform: scale(0);
+    }
+}
+
+@mixin mobile-navigation {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $color-pink;
+    transition: 1s;
+    &.active {
+        top: 0;
+    }
+
+    ul {
+        display: block;
+    }
+
+    li {
+        margin-left: 10px;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+}

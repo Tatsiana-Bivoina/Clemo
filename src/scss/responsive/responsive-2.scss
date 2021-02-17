@@ -1,0 +1,652 @@
+@media all and (max-width: 1000px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    // header
+    .header {
+        .wrapper {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    // wr-about-us
+    .wr-about-us {
+        margin-bottom: 20px;
+        padding-top: 150px;
+        h2 {
+            margin-bottom: 55px;
+        }
+    }
+
+     // wr-best-team
+     .wr-best-team {
+        .wrapper {
+            padding-bottom: 0;
+            padding-top: 15px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .slide-container,
+    .slide-container-center {
+        .name {
+            font-size: 34px;
+        }
+
+        .team-member {
+            width: 155px;
+            height: 155px;
+        }
+    }
+
+    // wr-get-in-touch
+    .block-contacts {
+        margin-left: 15px;
+    }
+
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        .submit {
+            margin-bottom: 20px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .socials {
+            margin-bottom: 40px;
+        }
+
+        .icon-check {
+            width: 55px;
+            height: 45px;
+        }
+
+        .message {
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media all and (max-width: 780px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    // header
+    .header {
+        &::before {
+            z-index: 4;
+        }
+
+        .logo {
+            z-index: 4;
+            font-size: 26px;
+        }
+    }
+
+    .burger-menu {
+        @include burger-menu;
+    }
+
+    .nav {
+        @include mobile-navigation;
+        top: -1038px;
+        padding-top: 100px;
+    }
+
+    // wr-about-us
+    .block-about-us {
+        margin-bottom: 30px;
+    }
+
+    .about-us-title {
+        h3 {
+            margin-bottom: 0;
+            font-size: 30px;
+        }
+    }
+
+    .about-us-content {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    // WR-ACHIEVEMENT
+    .number-1,
+    .number-2,
+    .number-3 {
+        font-size: 30px;
+        &::before {
+            left: -3px;
+            bottom: -12px;
+        }
+    }
+
+    // wr-best-team
+    .wr-best-team {
+        margin-bottom: 40px;
+        h2 {
+            margin-bottom: 15px;
+            font-size: 56px;
+        }
+    }
+
+    .slide-container,
+    .slide-container-center {
+        height: 390px;
+        .name {
+            font-size: 30px;
+        }
+
+        .team-member {
+            width: 145px;
+            height: 145px;
+        }
+    }
+
+    // wr-instagram 
+    .wr-instagram {
+        margin-bottom: 150px;
+        h2 {
+            margin-bottom: 60px;
+            font-size: 56px;
+        }
+
+        .btn {
+            margin-top: 30px;
+        }
+    }
+
+    // wr-get-in-touch
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        padding-top: 20px;
+        .submit {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .adress,
+    .phone,
+    .mail {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .mail {
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        .svg-container {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .block-forms {
+        .form-item-1 {
+            margin-bottom: 20px;
+        }
+
+        .form-item-2 {
+            margin-bottom: 65px;
+        }
+
+        .form-item-3 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 40px;
+            height: 30px;
+        }
+
+        .message {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .about-us-content,
+    .wr-instagram {
+        .btn {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+}
+
+@media all and (max-width: 650px) {
+    // wr-about-us
+    .about-us-title {
+        h3 {
+            font-size: 22px;
+        }
+    }
+
+    .about-us-content {
+        padding-top: 20px;
+        p {
+            font-size: 14px;
+        }
+    }
+
+    // wr-best-team
+    .best-team-slider {
+        .swiper-button-prev::after, 
+        .swiper-button-next::after {
+            font-size: 40px;
+        }
+    } 
+    .slide-container,
+    .slide-container-center {
+        height: 370px;
+        .name {
+            font-size: 24px;
+        }
+
+        .work {
+            font-size: 16px;
+        }
+
+        .team-member {
+            width: 120px;
+            height: 120px;
+        }
+    }
+
+    .slide-container-center {
+        .work {
+            margin-bottom: 40px;
+        }
+    }
+
+    // wr-get-in-touch
+    .adress,
+    .phone,
+    .mail {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .socials {
+        .svg-container {
+            width: 30px;
+            height: 30px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .block-forms {
+        label {
+            font-size: 16px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 30px;
+            height: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .wr-about-us,
+    .wr-best-team,
+    .wr-instagram,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 46px;
+        }
+    }
+
+    .wr-about-us {
+        padding-top: 120px;
+    }
+
+    .block-about-us {
+        flex-direction: column;
+    }
+
+    .img-title-container,
+    .about-us-content {
+        width: 100%;
+    }
+
+    .about-us-img {
+        margin-bottom: 20px;
+        &::before {
+            content: none;
+        }
+    }
+    .about-us-content {
+        margin-left: 0;
+        &::before {
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        p {
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: justify;
+        }
+
+        .btn {
+            margin: 16px auto;
+        }
+    }
+
+    .about-us-title {
+        h3 {
+            white-space: inherit;
+            margin: 20px 15px;
+            text-align: center;
+        }
+    }
+
+    .project-complete,
+    .happy-clients,
+    .cups {
+        p {
+            font-size: 14px;
+        }
+
+        .number-1,
+        .number-2,
+        .number-3 {
+            font-size: 30px;
+            &::before {
+                width: 50px;
+            }
+        }
+
+        .number-3::before {
+            left: 6px;
+        }
+    }
+
+    // wr-best-team
+    .slide-container,
+    .slide-container-center {
+        height: 289px;
+        .name {
+            font-size: 18px;
+        }
+
+        .work {
+            font-size: 14px;
+        }
+
+        .team-member {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .best-team-slider {
+        .swiper-button-prev::after, 
+        .swiper-button-next::after {
+            font-size: 30px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+        }
+        
+    }
+
+    // wr-get-in-touch
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .block-contacts,
+    .block-forms {
+        width: 100%;
+    }
+
+    .socials {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .block-forms {
+        input,
+        textarea {
+            width: 87%;
+        }
+    }
+
+    .form-item-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wr-get-in-touch-1 {
+        .block-forms {
+            text-align: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media all and (max-width: 430px) {
+    .wr-about-us,
+    .wr-best-team,
+    .wr-instagram,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 42px;
+        }
+    }
+
+    .header {
+        .wrapper {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .project-complete,
+    .happy-clients,
+    .cups {
+        p {
+            font-size: 12px;
+        }
+
+        .number-1,
+        .number-2,
+        .number-3 {
+            font-size: 20px;
+            &::before {
+                width: 30px;
+            }
+        }
+    }
+
+    // wr-best-team
+
+    .slide-container,
+    .slide-container-center {
+        height: 250px;
+        .name {
+            margin-top: 5px;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .work {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+
+        .team-member {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .best-team-slider {
+        padding-bottom: 25px;
+        .swiper-button-prev::after, 
+        .swiper-button-next::after {
+            font-size: 30px;
+        }
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            top: 50%;
+            transform: translate(-50%);
+        }
+
+        .swiper-button-prev {
+            left: 36px;
+        }
+
+        .swiper-pagination-bullets {
+            bottom: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .wr-instagram {
+        margin-bottom: 110px;
+        .btn {
+            margin-top: 10px;
+        }
+    }
+
+    .footer {
+        .copyright {
+            font-size: 14px;
+        }
+
+        .rights {
+            font-size: 12px;
+        }
+    }
+}
+
+@media all and (max-width: 380px) {
+    .wr-about-us {
+        padding-top: 90px;
+    }
+
+    .wr-about-us,
+    .wr-best-team,
+    .wr-instagram,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .about-us-content,
+    .wr-instagram {
+        .btn {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+
+    .project-complete,
+    .happy-clients,
+    .cups {
+        p {
+            font-size: 10px;
+        }
+
+        .number-1,
+        .number-2,
+        .number-3 {
+            font-size: 16px;
+        }
+
+        .number-3 {
+            &::before {
+                left: 2px;
+            }
+        }
+    }
+
+     // wr-get-in-touch
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+
+    .block-forms {
+        input,
+        textarea {
+            width: 85%;
+        }
+
+        label {
+            font-size: 14px;
+        }
+    }
+
+    .adress,
+    .phone,
+    .mail {
+        margin-bottom: 25px;
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 30px;
+            height: 20px;
+        }
+        
+        .message {
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+}
