@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/blog.min.css" />
+    <title>Clemo</title>
+</head>
+<body>
+  <!-- header -->
+    <header class="header">
+      <div class="header__wrapper wrapper">
+        <div class="header__logo">
+          <a class="header__link" href="../index.html" class="header__logo-link">clemo.</a>
+        </div>
+        <div id="burger" class="header__burger-menu">
+          <span></span>
+        </div>
+        <div id="navigation" class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="./about-us.html">about us</a></li>
+            <li class="nav__item"><a class="nav__link" href="./service.html">services</a></li>
+            <li class="nav__item"><a class="nav__link" href="./works.html">works</a></li>
+            <li class="nav__item"><a class="nav__link nav__link_active" href="./blog.html">blog</a></li>
+            <li class="nav__item"><a class="nav__link" href="./contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- title -->
+    <section class="title">
+      <h2 class="title__name">blog</h2>
+    </section>
+    <!-- news -->
+    <section class="news">
+      <div class="news__wrapper wrapper">
+        <div class="news__nav">
+          <ul class="news__list">
+            <li class="news__item"><button id="item-all" class="news__btn news__btn_active">all</button></li>
+            <li class="news__item"><button id="item1" class="news__btn">creative kitchen</button></li>
+            <li class="news__item"><button id="item2" class="news__btn">art</button></li>
+            <li class="news__item"><button id="item3" class="news__btn">design</button></li>
+            <li class="news__item"><button id="item4" class="news__btn">life</button></li>
+            <li class="news__item"><button id="item5" class="news__btn">events</button></li>
+          </ul>
+        </div>
+        <div class="news__container" data-item="item1">
+          <div class="news__photo">
+            <div class="news__photo-block photo-block">
+              <img class="photo-block__img" src="../media/blog/blog-1.png" alt="food">
+            </div>
+          </div>
+          <div class="news__article article">
+            <h3 class="article__title">we have created 
+              the best event</h3>
+            <time class="article__datetime">16 november 2015</time>
+            <p class="article__content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+            </p>
+            <a class="article__btn" href="https://www.facebook.com/">learn more</a>
+          </div>
+        </div>
+        <div class="news__container" data-item="item2">
+          <div class="news__photo">
+            <div class="news__photo-block photo-block">
+              <img class="photo-block__img" src="../media/blog/blog-2.png" alt="stairs">
+            </div>
+          </div>
+          <div class="news__article article">
+            <h3 class="article__title">how to make a good 
+              design?</h3>
+            <time class="article__datetime">11 november 2015</time>
+            <p class="article__content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+            </p>
+            <p class="article__content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
+            <a class="article__btn" href="https://www.facebook.com/">learn more</a>
+          </div>
+        </div>
+        <div class="news__container" data-item="item3">
+          <div class="news__photo">
+            <div class="news__photo-block photo-block">
+              <img class="photo-block__img" src="../media/blog/blog-5.jpg" alt="shirt">
+            </div>
+          </div>
+          <div class="news__article article">
+            <h3 class="article__title">we have created 
+              the best event</h3>
+            <time class="article__datetime">12 november 2015</time>
+            <p class="article__content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+            </p>
+            <a class="article__btn" href="https://www.facebook.com/">learn more</a>
+          </div>
+        </div>
+        <div class="news__container" data-item="item5">
+          <div class="news__photo">
+            <div class="news__photo-block photo-block">
+              <img class="photo-block__img" src="../media/blog/blog-4.jpg" alt="game">
+            </div>
+          </div>
+          <div class="news__article article">
+            <h3 class="article__title">we have created 
+              the best event</h3>
+            <time class="article__datetime">15 november 2015</time>
+            <p class="article__content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+            </p>
+            <a class="article__btn" href="https://www.facebook.com/">learn more</a>
+          </div>
+        </div>
+        <div class="news__container" data-item="item4">
+          <div class="news__photo">
+            <div class="news__photo-block photo-block">
+              <img class="photo-block__img" src="../media/blog/blog-3.png" alt="">
+            </div>
+          </div>
+          <div class="news__article article">
+            <h3 class="article__title">how to make a good 
+              design?</h3>
+            <time class="article__datetime">14 november 2015</time>
+            <p class="article__content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+            </p>
+            <p class="article__content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
+            <a class="article__btn" href="https://www.facebook.com/">learn more</a>
+          </div>
+        </div>
+        <a class="news__button" href="https://www.facebook.com/">show more</a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__wrapper wrapper">
+        <p class="footer__copyright">&copy; 2021 clemo</p>
+        <p class="footer__rights">all rights reserved</p>
+      </div>
+    </footer>
+
+    <script type="module" src="../js/blog.min.js"></script>
+</body>
+</html>

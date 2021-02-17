@@ -1,0 +1,269 @@
+@media all and (max-width: 1000px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header {
+        &__link {
+            margin-left: 15px;
+        }
+
+        &__nav {
+            margin-right: 15px;
+        }
+    }
+
+    .title {
+        &__name {
+            margin-top: 190px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .news {
+        &__wrapper {
+            padding-bottom: 70px;
+        }
+        &__nav {
+            margin-bottom: 30px;
+        }
+
+        &__container:nth-child(even),
+        &__container:nth-child(odd) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__photo,
+        &__article {
+            width: 100%;
+        }
+
+        &__container:nth-child(even) &__photo-block,
+        &__container:nth-child(odd) &__photo-block {
+            margin: 15px auto 30px;
+        }
+
+        &__container:nth-child(even) &__article,
+        &__container:nth-child(odd) &__article {
+            padding-right: 50px;
+            padding-left: 50px;
+            text-align: center;
+        } 
+
+    }
+
+    .article {
+        &__title {
+            font-size: 42px;
+            &::after {
+                top: 140px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+
+        &__btn {
+            margin: 40px auto 0;
+        }
+    }
+}
+
+@media all and (max-width: 780px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header {
+        &::before {
+            z-index: 4;
+        }
+        &__wrapper {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        &__link {
+            z-index: 4;
+            font-size: 26px;
+        }
+
+        &__burger-menu {
+            @include burger-menu; 
+        }
+
+        &__nav {
+            @include mobile-navigation;
+            top: -1040px;
+            padding-top: 120px;
+        }
+    }
+
+    .title {
+        &__name {
+            margin-top: 100px;  
+            margin-bottom: 30px;    
+            font-size: 54px;
+        }
+    }
+
+    .news {
+        &__container {
+            margin-bottom: 60px;
+        }
+        &__button {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .article {
+        &__title {
+            font-size: 34px;
+            &::after {
+                top: 115px;
+            }
+        }
+
+        &__datetime,
+        &__content {
+            font-size: 16px;
+        }
+
+        &__btn {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .footer {
+        &__wrapper {
+            margin: 15px 0;
+        }
+    }
+}
+
+@media all and (max-width: 650px) {
+    .title {
+        &__name {    
+            font-size: 50px;
+        }
+    }
+
+    .news {
+        &__wrapper {
+            padding-bottom: 50px;
+        }
+
+        &__nav {
+            margin-bottom: 10px;
+        }
+        
+        &__btn {
+            font-size: 14px;
+        }
+    }
+
+    .article {
+        &__title {
+            font-size: 30px;
+            &::after {
+                top: 100px;
+            }
+        }
+
+        &__datetime,
+        &__content {
+            font-size: 14px;
+        }
+
+        &__datetime {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media all and (max-width: 540px) {
+    .title {
+        &__name {    
+            font-size: 48px;
+        }
+    }
+
+    .article {
+        &__title {
+            font-size: 28px;
+            &::after {
+                top: 120px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 430px) {
+    .news {
+        &__button {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+
+    .article {
+        &__btn {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media all and (max-width: 380px) {
+    .title {
+        &__name {    
+            font-size: 46px;
+        }
+    }
+
+    .news {
+        &__container {
+            margin-bottom: 40px;
+        }
+
+        &__btn {
+            font-size: 10px;
+        }
+    }
+
+    .article {
+        &__title {
+            font-size: 24px;
+            &::after {
+                top: 110px;
+            }
+        }
+
+        &__datetime,
+        &__content {
+            font-size: 12px;
+        }
+
+        &__btn {
+            margin-top: 20px;
+        }
+    }
+
+    .footer {
+        &__copyright {
+            font-size: 14px;
+        }
+        &__rights {
+            font-size: 10px;
+        }
+    }
+    
+}

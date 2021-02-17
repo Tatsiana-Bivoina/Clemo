@@ -1,0 +1,313 @@
+@media all and (max-width: 1000px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .header {
+        .wrapper {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        padding-top: 150px;
+        h2 {
+            margin-bottom: 50px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .socials {
+            margin-bottom: 40px;
+        }
+
+        .icon-check {
+            width: 55px;
+            height: 45px;
+        }
+
+        .message {
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media all and (max-width: 780px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header {
+        &::before {
+            z-index: 4;
+        }
+
+        .logo {
+            z-index: 4;
+            font-size: 26px;
+        }
+    }
+
+    .burger-menu {
+        @include burger-menu;
+    }
+
+    .nav {
+        @include mobile-navigation;
+        top: -1040px;
+        padding-top: 100px;
+    }
+
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        padding-top: 150px;
+
+        h2 {
+            margin-bottom: 45px;
+            font-size: 56px;
+        }
+
+        .submit {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .adress,
+    .phone,
+    .mail {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .mail {
+        margin-bottom: 20px;
+    }
+
+    .socials {
+        .svg-container {
+            width: 35px;
+            height: 35px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .block-forms {
+        .form-item-1 {
+            margin-bottom: 20px;
+        }
+
+        .form-item-2 {
+            margin-bottom: 65px;
+        }
+
+        .form-item-3 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 40px;
+            height: 30px;
+        }
+
+        .message {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media all and (max-width: 650px) {
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        padding-top: 120px;
+
+        h2 {
+            font-size: 52px;
+            margin-bottom: 35px;
+        }
+
+        .submit {
+            margin-bottom: 70px;
+        }
+    }
+
+    .adress,
+    .phone,
+    .mail {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .socials {
+        .svg-container {
+            width: 30px;
+            height: 30px;
+        }
+
+        svg {
+            width: 17px;
+            height: 17px;
+        }
+    }
+
+    .block-forms {
+        label {
+            font-size: 16px;
+        }
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 30px;
+            height: 20px;
+        }
+
+        .message {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .map-block {
+        height: 350px;
+    }
+}
+
+@media all and (max-width: 540px) {
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 46px;
+        }
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .block-contacts,
+    .block-forms {
+        width: 100%;
+    }
+
+    .socials {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .block-forms {
+        input,
+        textarea {
+            width: 87%;
+        }
+    }
+
+    .form-item-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .wr-get-in-touch-1 {
+        .block-forms {
+            text-align: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media all and (max-width: 430px) {
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        h2 {
+            font-size: 42px;
+        }
+
+        .submit {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
+        }
+    }
+
+    .map-block {
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .header {
+        .wrapper {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        padding-top: 100px;
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    .block-forms {
+        input,
+        textarea {
+            width: 85%;
+        }
+
+        label {
+            font-size: 14px;
+        }
+    }
+
+    .adress,
+    .phone,
+    .mail {
+        margin-bottom: 25px;
+    }
+
+    .wr-get-in-touch-1 {
+        .icon-check {
+            width: 30px;
+            height: 20px;
+        }
+        
+        .message {
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+
+    footer {
+        .copyright {
+            font-size: 14px;
+        }
+
+        .rights {
+            font-size: 12px;
+        }
+    }
+}
