@@ -4,11 +4,10 @@
 @import 'variables';
 @import 'mixins';
 
-
-
 // WR-INTRO
 .wr-intro {
-    margin-bottom: 74px;
+    padding-bottom: 74px;
+    width: 100%;
 }
 
 // WR-HOME SLIDER
@@ -57,9 +56,8 @@
         }
     }
 
-    h1 {
+    .slide-title {
         margin-bottom: 71px;
-        font-family: $font-light;
         font-size: 24px;
         white-space: pre-line;
         text-align: center;
@@ -123,48 +121,33 @@
 }
 
 // WHAT WE DO?
-.wr-what-we-do {
-    margin-bottom: 69px;
-
-    h2 {
-        @include block-title;
-    }
-}
 
 .block-what-we-do:nth-child(even) {
     display: flex;
-    
+    justify-content: space-between;
+    margin-bottom: 86px;
 }
 
 .block-what-we-do:nth-child(odd) {
     display: flex;
     flex-direction: row-reverse;
-}
-
-.creative-kitchen,
-.art-installation {
+    justify-content: space-between;
     margin-bottom: 86px;
 }
 
-.creative-kitchen-img,
-.art-installation-img,
-.print-design-img {
+.what-we-do-img {
     position: relative;
     width: 49%;
     margin-top: 12px;
 }
 
-.creative-kitchen-img::after,
-.art-installation-img::after,
-.print-design-img::after {
+.what-we-do-img::after {
     content: "";
     display: block;
     padding-top: 100%;
 }
 
-.creative-kitchen-img img,
-.art-installation-img img,
-.print-design-img img {
+.what-we-do-img img {
     position: absolute;
     top: 0;
     left: 0;
@@ -174,16 +157,13 @@
     object-position: center top;
 }
 
-.creative-kitchen-content,
-.art-installation-content,
-.print-design-content {
+.what-we-do-content {
     width: 43%;
-    margin-left: 8%;
 
     p {
-        margin-left: 4px;
-        font-family: $font-light;
-        font-size: 18px;
+        margin-bottom: 28px;
+        margin-left: 5px;
+        margin-right: 5px;
         line-height: 1.5;
     }
 
@@ -202,9 +182,11 @@
     }
 }
 
-.creative-kitchen-title,
-.art-installation-title,
-.print-design-title {
+.what-we-do-content p:last-of-type {
+    margin-bottom: 38px;
+}
+
+.block-title {
     position: relative;
     margin-bottom: 42px;
 
@@ -218,80 +200,40 @@
         width: 55px;
         background: $color-black;
     }
-}
 
-.kitchen-title,
-.art-title,
-.design-title {
-    font-family: $font-light;
-    font-size: 30px;
-    white-space: pre-wrap;
-    text-align: start;
-    color: $color-black;
-    border: none;
-    background-color: $color-white;
-
-    &:hover,
-    &:hover ~ span {
-        color: $color-pink;
-    }
-
-    &:focus,
-    &:focus ~ span {
-        outline: none;
-        text-decoration: underline;
-        color: $color-pink;
-    }
-
-    span {
-        font-family: $font-bold;
-        font-size: 48px;
-    }
-}
-
-.creative-kitchen-paragraph-1,
-.art-installation-paragraph-1,
-.print-design-paragraph-1 {
-    margin-bottom: 28px;
-}
-.creative-kitchen-paragraph-2,
-.art-installation-paragraph-2,
-.print-design-paragraph-2 {
-    margin-bottom: 38px;
-}
-
-.art-installation-content {
-    margin-right: 8%;
-    margin-left: 0;
-
-    .art-title {
-        &::after {
-            bottom: -22px;
-            left: 0;
+    .title {
+        font-size: 30px;
+        white-space: pre-wrap;
+        text-align: start;
+        border: none;
+        background-color: $color-white;
+    
+        &:hover,
+        &:hover ~ span {
+            color: $color-pink;
+            cursor: pointer;
         }
-    }
-
-    p {
-        margin-left: 2px;
-    }
-
-    .art-installation-paragraph-2 {
-        margin-bottom: 41px;
-    }
-
-    .btn {
-        margin-left: 2px;
-        @include btn-light;
+    
+        &:focus,
+        &:focus ~ span {
+            outline: none;
+            text-decoration: underline;
+            color: $color-pink;
+        }
+    
+        span {
+            font-family: $font-bold;
+            font-size: 48px;
+        }
     }
 }
 
 
 // WR-OUR-BEST-WORK
 .wr-our-best-work {
-    margin-bottom: 145px;
+    padding-bottom: 100px;
 
-    h2 {
-        @include block-title;
+    .section-title {
         margin-bottom: 88px;
     }
 }
@@ -360,10 +302,10 @@
 
 // WR-CLIENTS-SAY`S
 .wr-clients-says {
-    margin-bottom: 94px;
+    padding-top: 71px;
+    padding-bottom: 96px;
 
-    h2 {
-        @include block-title;
+    .section-title {
         margin-bottom: 72px;
     }
 }
@@ -412,9 +354,6 @@
 }
 
 .brand-job {
-    font-family: $font-light;
-    font-size: 18px;
-    color: $color-black;
     margin-top: 0;
     margin-right: 81px;
 }
@@ -423,8 +362,6 @@
     margin-top: 10px;
     margin-left: 13px;
     margin-right: 49px;
-    font-family: $font-light;
-    font-size: 18px;
     line-height: 1.5;
     overflow: hidden;
     color: $color-dark-grey;
@@ -476,7 +413,7 @@
     background-size: cover;
     background-position: center bottom;
 
-    h2 {
+    .section-title {
         color: $color-white;
     }
 }
@@ -510,19 +447,14 @@
     }
 }
 
-.socials {
-    .svg-container {
-        border: 2px solid $color-white;
-        background-color: $color-white;
-    }
-
-    svg {
-        fill: $color-black;
-    }
+.block-forms,
+.block-contacts {
+    width: 50%;
 }
 
 .block-forms {
-
+    justify-content: flex-start;
+    
     input,
     textarea {
         color: $color-white;

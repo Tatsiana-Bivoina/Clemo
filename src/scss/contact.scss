@@ -8,17 +8,13 @@
 // header
 .header {
     border-bottom: 1px solid $color-grey;
-
-    .wrapper {
-        padding-bottom: 54px;
-    }
 }
 
 .wr-get-in-touch,
 .wr-get-in-touch-1 {
     padding-top: 229px;
 
-    h2 {
+    .section-title {
         color: $color-black;
     }
 }
@@ -31,6 +27,13 @@
     .icon-check {
         fill: $color-black;
     }
+}
+
+.contact-container {
+    padding-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
 }
 
 .adress,
@@ -48,12 +51,37 @@
 
 .phone {
     .icon-phone {
-        fill: $color-black;
+        width: 18px;
+        height: 18px;
+    }
+
+    a {
+        margin-left: 20px;
+        color: $color-black;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}
+
+.mail {
+    .icon-mail {
+        width: 13px;
+    }
+
+    a {
+        margin-left: 20px;
+        color: $color-black;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 }
 
 .socials {
-    .svg-container {
+    li {
         border: 2px solid $color-black;
         background-color: $color-black;
     }
@@ -61,6 +89,11 @@
     svg {
         fill: $color-white;
     }
+}
+
+.block-forms,
+.block-contacts {
+    width: 50%;
 }
 
 .block-forms {
@@ -75,8 +108,11 @@
 }
 
 .map-block {
-    width: 100%;
+    max-width: 1150px;
     height: 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
 
     iframe {
         width: 100%;

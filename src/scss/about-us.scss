@@ -14,10 +14,9 @@
 }
 
 .wr-about-us {
-    margin-bottom: 52px;
     padding-top: 229px;
     border-bottom: 1px solid $color-grey;
-    h2 {
+    .section-title {
         @include block-title;
         margin-bottom: 88px;
     }
@@ -115,15 +114,16 @@
 }
 
 // WR-ACHIEVEMENT
+.wr-achievement {
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
 .achievements-block {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 76px;
 }
 
-.project-complete,
-.happy-clients,
-.cups {
+.achievement {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,9 +134,7 @@
         font-size: 18px;
     }
 
-    .number-1,
-    .number-2,
-    .number-3 {
+    .number {
         position: relative;
         margin-top: 40px;
         margin-bottom: 10px;
@@ -145,20 +143,22 @@
         &::before {
             content: "";
             position: absolute;
-            left: -3px;
+            left: 50%;
+            transform: translate(-50%);
             bottom: -12px;
             width: 56px;
             height: 2px;
             background-color: $color-black;
         }
     }
-
-    .number-3::before {
-        left: 13px;
-    }
 }
 
  // WR-BEST-TEAM
+ .wr-best-team {
+     .wrapper {
+        padding-bottom: 75px;
+     }
+ }
 
 .slide-container-center {
     .name {
@@ -181,8 +181,9 @@
 // WR-INSTAGRAM
 .wr-instagram {
     position: relative;
-    margin-bottom: 200px;
-    h2 {
+    padding-top: 75px;
+    padding-bottom: 200px;
+    .section-title {
         @include block-title;
         margin-bottom: 88px;
     }
@@ -248,7 +249,7 @@
     background-size: cover;
     background-position: center bottom;
 
-    h2 {
+    .section-title {
         color: $color-white;
     }
 }
@@ -291,6 +292,11 @@
     svg {
         fill: $color-black;
     }
+}
+
+.block-forms,
+.block-contacts {
+    width: 50%;
 }
 
 .block-forms {
