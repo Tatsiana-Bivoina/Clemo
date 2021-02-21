@@ -31,7 +31,7 @@
   </header>
   <section class="wr-about-us">
     <div class="wrapper">
-      <h2>about us</h2>
+      <h2 class="section-title">about us</h2>
       <div class="block-about-us">
         <div class="img-title-container">
           <div class="about-us-img">
@@ -63,16 +63,16 @@
   <section class="wr-achievement">
     <div class="wrapper">
       <div class="achievements-block">
-        <div class="project-complete">
-          <p class="number-1">45</p>
+        <div class="achievement">
+          <p class="number">45</p>
           <p>project complete</p>
         </div>
-        <div class="happy-clients">
-          <p class="number-2">36</p>
+        <div class="achievement">
+          <p class="number">36</p>
           <p>happy clients</p>
         </div>
-        <div class="cups">
-          <p class="number-3">868</p>
+        <div class="achievement">
+          <p class="number">868</p>
           <p>cups of milk</p>
         </div>
       </div>
@@ -80,7 +80,7 @@
   </section>
   <section class="wr-best-team">
     <div class="wrapper">
-      <h2>best team</h2>
+      <h2 class="section-title">best team</h2>
       <!-- slider -->
       <div class="swiper-container best-team-slider">
         <div class="swiper-wrapper">
@@ -121,7 +121,7 @@ spencer</p>
   </section>
   <section class="wr-instagram">
     <div class="wrapper">
-      <h2>instagram</h2>
+      <h2 class="section-title">instagram</h2>
       <div class="instagram-block">
         <div class="instagram-img">
           <img src="../media/about_us/food.jpg" alt="food">
@@ -144,7 +144,7 @@ spencer</p>
   </section>
   <section id="wr-get-in-touch" class="wr-get-in-touch">
     <div class="wrapper">
-      <h2>get in touch</h2>
+      <h2 class="section-title">get in touch</h2>
       <div class="contact-container">
         <div class="block-contacts">
           <div class="contacts">
@@ -159,66 +159,68 @@ spencer</p>
               <svg class="icon-phone">
                 <use xlink:href="../media/sprites/sprite.svg#icon-mobile"></use>
               </svg>
-              <p>+1-670-567-5590</p>
+              <a href="tel:+1-670-567-5590">+1-670-567-5590</a>
             </div>
             <div class="mail">
               <svg class="icon-mail">
                 <use xlink:href="../media/sprites/sprite.svg#icon-envelope"></use>
               </svg>
-              <p>hello@clemocreative.com</p>
+              <a href="mailto:hello@clemocreative.com">hello@clemocreative.com</a>
             </div>
           </div>
           <div class="socials">
-            <div class="svg-container">
-              <a href="https://www.facebook.com/">
-                <svg class="icon-fb">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://twitter.com/">
-                <svg class="icon-twitter">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://www.google.com/">
-                <svg class="icon-google">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-google"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://www.pinterest.com/">
-                <svg class="icon-pinterest">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-pinterest"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://www.instagram.com/">
-                <svg class="icon-instagram">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a> 
-            </div>
+            <ul class="socials-list">
+              <li>
+                <a href="https://www.facebook.com/" class="icon-fb">
+                  <svg>
+                    <use xlink:href="../media/sprites/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-google"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="block-forms">
           <form id="form-1">
             <div class="form-item-1">
               <input id="formInput1" type="text" class="form-input" autocomplete="off" required>
-              <label class="form-label">name</label>
+              <label for="formInput1" class="form-label">name</label>
             </div>
             <div class="form-item-2">
               <input id="formInput2" type="text" class="form-input" autocomplete="off" required>
-              <label class="form-label">e-mail</label>
+              <label for="formInput2" class="form-label">e-mail</label>
             </div>
             <div class="form-item-3">
               <textarea id="textarea" class="textarea" required></textarea>
-              <label class="textarea-label">your message</label>
+              <label for="textarea" class="textarea-label">your message</label>
             </div>
             <div class="form-item-4">
               <input type="submit" class="submit" value="submit" >
@@ -230,7 +232,7 @@ spencer</p>
   </section>
   <section id="wr-get-in-touch-1" class="wr-get-in-touch-1">
     <div class="wrapper">
-      <h2>get in touch</h2>
+      <h2 class="section-title">get in touch</h2>
       <div class="contact-container">
         <div class="block-contacts">
           <div class="contacts">
@@ -245,51 +247,53 @@ spencer</p>
               <svg class="icon-phone">
                 <use xlink:href="../media/sprites/sprite.svg#icon-mobile"></use>
               </svg>
-              <p>+1-670-567-5590</p>
+              <a href="tel:+1-670-567-5590">+1-670-567-5590</a>
             </div>
             <div class="mail">
               <svg class="icon-mail">
                 <use xlink:href="../media/sprites/sprite.svg#icon-envelope"></use>
               </svg>
-              <p>hello@clemocreative.com</p>
+              <a href="mailto:hello@clemocreative.com">hello@clemocreative.com</a>
             </div>
           </div>
           <div class="socials">
-            <div class="svg-container">
-              <a href="https://www.facebook.com/">
-                <svg class="icon-fb">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-fb"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://twitter.com/">
-                <svg class="icon-twitter">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://www.google.com/">
-                <svg class="icon-google">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-google"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://www.pinterest.com/">
-                <svg class="icon-pinterest">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-pinterest"></use>
-                </svg>
-              </a>
-            </div>
-            <div class="svg-container">
-              <a href="https://www.instagram.com/">
-                <svg class="icon-instagram">
-                  <use xlink:href="../media/sprites/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a> 
-            </div>
+            <ul class="socials-list">
+              <li>
+                <a href="https://www.facebook.com/" class="icon-fb">
+                  <svg>
+                    <use xlink:href="../media/sprites/sprite.svg#icon-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.google.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-google"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/">
+                  <svg class="icon">
+                    <use xlink:href="../media/sprites/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="block-forms">

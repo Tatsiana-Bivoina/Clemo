@@ -1,9 +1,16 @@
-@media all and (max-width: 1000px) {
-    body {
-        margin-left: 10px;
-        margin-right: 10px;
+@media all and (max-width: 1150px) {
+    .header {
+        .logo {
+            margin-left: 15px;
+        }
+    
+        .nav {
+            margin-right: 15px;
+        }
     }
+}
 
+@media all and (max-width: 1000px) {
     // header
     .header {
         .wrapper {
@@ -16,9 +23,9 @@
 
     // wr-about-us
     .wr-about-us {
-        margin-bottom: 20px;
+        padding-bottom: 20px;
         padding-top: 150px;
-        h2 {
+        .section-title {
             margin-bottom: 55px;
         }
     }
@@ -30,7 +37,7 @@
             padding-top: 15px;
         }
 
-        h2 {
+        .section-title {
             margin-bottom: 20px;
         }
     }
@@ -44,7 +51,15 @@
         .team-member {
             width: 155px;
             height: 155px;
+            img {
+                clip-path: circle(76px at 80px 80px);
+            }
         }
+    }
+
+    // wr-instagram
+    .wr-instagram {
+        padding-bottom: 150px;
     }
 
     // wr-get-in-touch
@@ -52,17 +67,7 @@
         margin-left: 15px;
     }
 
-    .wr-get-in-touch,
     .wr-get-in-touch-1 {
-        .submit {
-            margin-bottom: 20px;
-        }
-    }
-
-    .wr-get-in-touch-1 {
-        .socials {
-            margin-bottom: 40px;
-        }
 
         .icon-check {
             width: 55px;
@@ -122,20 +127,13 @@
     }
 
     // WR-ACHIEVEMENT
-    .number-1,
-    .number-2,
-    .number-3 {
+    .number {
         font-size: 30px;
-        &::before {
-            left: -3px;
-            bottom: -12px;
-        }
     }
 
     // wr-best-team
     .wr-best-team {
-        margin-bottom: 40px;
-        h2 {
+        .section-title {
             margin-bottom: 15px;
             font-size: 56px;
         }
@@ -143,7 +141,6 @@
 
     .slide-container,
     .slide-container-center {
-        height: 390px;
         .name {
             font-size: 30px;
         }
@@ -151,13 +148,15 @@
         .team-member {
             width: 145px;
             height: 145px;
+            img {
+                clip-path: circle(70px at 75px 75px);
+            }
         }
     }
 
     // wr-instagram 
     .wr-instagram {
-        margin-bottom: 150px;
-        h2 {
+        .section-title {
             margin-bottom: 60px;
             font-size: 56px;
         }
@@ -171,6 +170,7 @@
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
         padding-top: 20px;
+        padding-bottom: 60px;
         .submit {
             width: 140px;
             height: 40px;
@@ -178,20 +178,22 @@
         }
     }
 
-    .adress,
-    .phone,
-    .mail {
+    .adress {
         p {
             font-size: 16px;
         }
     }
 
-    .mail {
+    .mail, 
+    .phone {
         margin-bottom: 20px;
+        a {
+            font-size: 16px;
+        }
     }
 
     .socials {
-        .svg-container {
+        .li {
             width: 35px;
             height: 35px;
         }
@@ -203,7 +205,7 @@
         }
 
         .form-item-2 {
-            margin-bottom: 65px;
+            margin-bottom: 50px;
         }
 
         .form-item-3 {
@@ -235,6 +237,10 @@
 
 @media all and (max-width: 650px) {
     // wr-about-us
+    .wr-about-us {
+        padding-top: 120px;
+    }
+
     .about-us-title {
         h3 {
             font-size: 22px;
@@ -255,20 +261,24 @@
             font-size: 40px;
         }
     } 
+
     .slide-container,
     .slide-container-center {
-        height: 370px;
         .name {
             font-size: 24px;
         }
 
         .work {
             font-size: 16px;
+            margin-bottom: 40px;
         }
 
         .team-member {
             width: 120px;
             height: 120px;
+            img {
+                clip-path: circle(58px at 61px 61px);
+            }
         }
     }
 
@@ -279,16 +289,26 @@
     }
 
     // wr-get-in-touch
-    .adress,
-    .phone,
-    .mail {
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        padding-bottom: 40px;
+    }
+
+    .adress {
         p {
             font-size: 14px;
         }
     }
 
+    .mail, 
+    .phone {
+        a {
+            font-size: 14px;
+        }
+    }
+
     .socials {
-        .svg-container {
+        li {
             width: 30px;
             height: 30px;
         }
@@ -324,7 +344,7 @@
     .wr-instagram,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
-        h2 {
+        .section-title {
             font-size: 46px;
         }
     }
@@ -374,31 +394,22 @@
         }
     }
 
-    .project-complete,
-    .happy-clients,
-    .cups {
+    .achievement {
         p {
             font-size: 14px;
         }
 
-        .number-1,
-        .number-2,
-        .number-3 {
+        .number {
             font-size: 30px;
             &::before {
                 width: 50px;
             }
-        }
-
-        .number-3::before {
-            left: 6px;
         }
     }
 
     // wr-best-team
     .slide-container,
     .slide-container-center {
-        height: 289px;
         .name {
             font-size: 18px;
         }
@@ -410,6 +421,9 @@
         .team-member {
             width: 80px;
             height: 80px;
+            img {
+                clip-path: circle(39px at 42px 42px);
+            }
         }
     }
 
@@ -433,18 +447,28 @@
 
     .block-contacts,
     .block-forms {
+        padding: 0;
         width: 100%;
     }
 
+    .adress,
+    .phone,
+    .mail {
+        margin-left: 10px;
+    }
+
     .socials {
-        justify-content: center;
         margin-bottom: 20px;
+        .socials-list {
+            justify-content: center;
+        }
     }
 
     .block-forms {
-        input,
-        textarea {
-            width: 87%;
+        form {
+            padding-left: 0;
+            width: 95%;
+            margin: 0 auto;
         }
     }
 
@@ -472,7 +496,7 @@
     .wr-instagram,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
-        h2 {
+        .section-title {
             font-size: 42px;
         }
     }
@@ -484,16 +508,12 @@
         }
     }
 
-    .project-complete,
-    .happy-clients,
-    .cups {
+    .achievement {
         p {
             font-size: 12px;
         }
 
-        .number-1,
-        .number-2,
-        .number-3 {
+        .number {
             font-size: 20px;
             &::before {
                 width: 30px;
@@ -505,7 +525,6 @@
 
     .slide-container,
     .slide-container-center {
-        height: 250px;
         .name {
             margin-top: 5px;
             margin-bottom: 4px;
@@ -520,6 +539,9 @@
         .team-member {
             width: 90px;
             height: 90px;
+            img {
+                clip-path: circle(43px at 45px 45px);
+            }
         }
     }
 
@@ -551,9 +573,19 @@
     }
 
     .wr-instagram {
-        margin-bottom: 110px;
+        padding-bottom: 90px;
         .btn {
             margin-top: 10px;
+        }
+    }
+
+    // wr-get-in-touch
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        .submit {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
         }
     }
 
@@ -578,7 +610,7 @@
     .wr-instagram,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
-        h2 {
+        .section-title {
             font-size: 40px;
         }
     }
@@ -592,42 +624,39 @@
         }
     }
 
-    .project-complete,
-    .happy-clients,
-    .cups {
+    .wr-achievement {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    .wr-about-us {
+        padding-bottom: 0;
+    }
+
+    .block-about-us {
+        margin-bottom: 0;
+    }
+
+    .achievement {
         p {
             font-size: 10px;
         }
 
-        .number-1,
-        .number-2,
-        .number-3 {
+        .number {
             font-size: 16px;
         }
+    }
 
-        .number-3 {
-            &::before {
-                left: 2px;
-            }
-        }
+    .wr-instagram {
+        padding-bottom: 70px;
+        padding-top: 30px;
     }
 
      // wr-get-in-touch
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
-        h2 {
+        .section-title {
             margin-bottom: 50px;
-        }
-    }
-
-    .block-forms {
-        input,
-        textarea {
-            width: 85%;
-        }
-
-        label {
-            font-size: 14px;
         }
     }
 

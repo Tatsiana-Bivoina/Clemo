@@ -154,15 +154,16 @@
         display: flex;
     }
 
-    &__container_hide {
-        pointer-events: none;
-        filter: blur(3px);
-        opacity: .5;
-    }
+    
 
     &__container:nth-child(odd) {
         display: flex;
         flex-direction: row-reverse;
+    }
+
+    &__container_hide:nth-child(even),
+    &__container_hide:nth-child(odd) {
+        display: none;
     }
 
     &__container:nth-child(even) &__article {

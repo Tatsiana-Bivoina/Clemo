@@ -1,19 +1,16 @@
-@media all and (max-width: 1000px) {
-    body {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
+@media all and (max-width: 1150px) {
     .header {
         &__link {
             margin-left: 15px;
         }
-
-        &__nav {
+    
+        &__nav{
             margin-right: 15px;
         }
     }
+}
 
+@media all and (max-width: 1000px) {
     .title {
         &__name {
             margin-top: 190px;

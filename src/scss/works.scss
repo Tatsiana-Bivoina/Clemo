@@ -11,15 +11,15 @@
     border-bottom: 1px solid $color-grey;
 
     .wrapper {
-        padding-bottom: 54px;
+        padding-bottom: 40px;
     }
 }
 
 // WR-OUR-BEST-WORK
 .wr-our-best-work {
-    margin-bottom: 249px;
-    margin-top: 229px;
-    h2 {
+    padding-top: 229px;
+    padding-bottom: 200px;
+    .section-title {
         @include block-title;
         margin-bottom: 66px;
     }
@@ -68,7 +68,7 @@
     grid-template-rows: repeat(2, 364px 205px 364px); 
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2vw;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     position: relative;
 
     .photo-block-1 {
