@@ -8,6 +8,19 @@
             margin-right: 15px;
         }
     }
+
+    .block-about-us {
+        padding-left: 10px;
+    }
+
+    .grid-container,
+    .instagram-block {
+        padding: 0 10px;
+    }
+
+    .block-contacts {
+        padding-left: 10px;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -23,27 +36,28 @@
 
     // wr-about-us
     .wr-about-us {
-        padding-bottom: 20px;
-        padding-top: 150px;
+        padding-bottom: 30px;
+        padding-top: 50px;
         .section-title {
-            margin-bottom: 55px;
+            padding-bottom: 50px;
         }
+    }
+
+    // .wr-achievement
+    .wr-achievement {
+        padding-top: 0;
+        padding-bottom: 20px;
     }
 
      // wr-best-team
-     .wr-best-team {
-        .wrapper {
-            padding-bottom: 0;
-            padding-top: 15px;
-        }
-
+    .wr-best-team,
+    .wr-instagram {
         .section-title {
-            margin-bottom: 20px;
+            padding-bottom: 20px;
         }
     }
 
-    .slide-container,
-    .slide-container-center {
+    .slide-container {
         .name {
             font-size: 34px;
         }
@@ -51,15 +65,19 @@
         .team-member {
             width: 155px;
             height: 155px;
-            img {
-                clip-path: circle(76px at 80px 80px);
-            }
         }
     }
 
     // wr-instagram
     .wr-instagram {
-        padding-bottom: 150px;
+        padding-top: 50px;
+        .wrapper {
+            padding-bottom: 110px;
+        } 
+
+        .btn {
+            margin-top: 0;
+        }
     }
 
     // wr-get-in-touch
@@ -104,18 +122,14 @@
 
     .nav {
         @include mobile-navigation;
-        top: -1038px;
+        top: -1145px;
         padding-top: 100px;
     }
 
     // wr-about-us
-    .block-about-us {
-        margin-bottom: 30px;
-    }
 
     .about-us-title {
         h3 {
-            margin-bottom: 0;
             font-size: 30px;
         }
     }
@@ -127,20 +141,23 @@
     }
 
     // WR-ACHIEVEMENT
-    .number {
-        font-size: 30px;
+    .achievement {
+        .number {
+            font-size: 30px;
+        }
     }
 
     // wr-best-team
     .wr-best-team {
+        padding-top: 20px;
+        padding-bottom: 40px;
         .section-title {
-            margin-bottom: 15px;
+            padding-bottom: 0;
             font-size: 56px;
         }
     }
 
-    .slide-container,
-    .slide-container-center {
+    .slide-container {
         .name {
             font-size: 30px;
         }
@@ -148,21 +165,16 @@
         .team-member {
             width: 145px;
             height: 145px;
-            img {
-                clip-path: circle(70px at 75px 75px);
-            }
         }
     }
 
     // wr-instagram 
     .wr-instagram {
-        .section-title {
-            margin-bottom: 60px;
-            font-size: 56px;
+        .wrapper {
+            padding-bottom: 80px;
         }
-
-        .btn {
-            margin-top: 30px;
+        .section-title {
+            font-size: 56px;
         }
     }
 
@@ -238,7 +250,18 @@
 @media all and (max-width: 650px) {
     // wr-about-us
     .wr-about-us {
-        padding-top: 120px;
+        padding-top: 10px;
+        
+    }
+
+    .wr-about-us,
+    .wr-instagram,
+    .wr-best-team,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
+        .section-title {
+            font-size: 52px;
+        }
     }
 
     .about-us-title {
@@ -258,12 +281,11 @@
     .best-team-slider {
         .swiper-button-prev::after, 
         .swiper-button-next::after {
-            font-size: 40px;
+            content: none;
         }
     } 
 
-    .slide-container,
-    .slide-container-center {
+    .slide-container {
         .name {
             font-size: 24px;
         }
@@ -276,15 +298,6 @@
         .team-member {
             width: 120px;
             height: 120px;
-            img {
-                clip-path: circle(58px at 61px 61px);
-            }
-        }
-    }
-
-    .slide-container-center {
-        .work {
-            margin-bottom: 40px;
         }
     }
 
@@ -349,12 +362,9 @@
         }
     }
 
-    .wr-about-us {
-        padding-top: 120px;
-    }
-
     .block-about-us {
         flex-direction: column;
+        padding-left: 0;
     }
 
     .img-title-container,
@@ -362,12 +372,19 @@
         width: 100%;
     }
 
+    .img-title-container {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
     .about-us-img {
+        width: 100%;
         margin-bottom: 20px;
         &::before {
             content: none;
         }
     }
+
     .about-us-content {
         margin-left: 0;
         &::before {
@@ -408,8 +425,7 @@
     }
 
     // wr-best-team
-    .slide-container,
-    .slide-container-center {
+    .slide-container {
         .name {
             font-size: 18px;
         }
@@ -421,23 +437,14 @@
         .team-member {
             width: 80px;
             height: 80px;
-            img {
-                clip-path: circle(39px at 42px 42px);
-            }
         }
     }
 
     .best-team-slider {
-        .swiper-button-prev::after, 
-        .swiper-button-next::after {
-            font-size: 30px;
-        }
-
         .swiper-pagination-bullet {
             width: 10px;
             height: 10px;
         }
-        
     }
 
     // wr-get-in-touch
@@ -451,6 +458,10 @@
         width: 100%;
     }
 
+    .block-contacts {
+        margin-left: 0;
+    }
+
     .adress,
     .phone,
     .mail {
@@ -462,13 +473,23 @@
         .socials-list {
             justify-content: center;
         }
+
+        li {
+            margin: 0 15px;
+            width: 35px;
+            height: 35px;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+        }
     }
 
     .block-forms {
         form {
-            padding-left: 0;
-            width: 95%;
-            margin: 0 auto;
+            padding: 0 10px;
+            max-width: 100%;
         }
     }
 
@@ -488,6 +509,10 @@
             justify-content: center;
         }
     }
+
+    .footer {
+        padding-top: 0;
+    }
 }
 
 @media all and (max-width: 430px) {
@@ -498,13 +523,6 @@
     .wr-get-in-touch-1 {
         .section-title {
             font-size: 42px;
-        }
-    }
-
-    .header {
-        .wrapper {
-            padding-top: 20px;
-            padding-bottom: 20px;
         }
     }
 
@@ -522,9 +540,11 @@
     }
 
     // wr-best-team
+    .wr-best-team {
+        padding-bottom: 20px;
+    }
 
-    .slide-container,
-    .slide-container-center {
+    .slide-container{
         .name {
             margin-top: 5px;
             margin-bottom: 4px;
@@ -539,28 +559,11 @@
         .team-member {
             width: 90px;
             height: 90px;
-            img {
-                clip-path: circle(43px at 45px 45px);
-            }
         }
     }
 
     .best-team-slider {
         padding-bottom: 25px;
-        .swiper-button-prev::after, 
-        .swiper-button-next::after {
-            font-size: 30px;
-        }
-
-        .swiper-button-prev, 
-        .swiper-button-next {
-            top: 50%;
-            transform: translate(-50%);
-        }
-
-        .swiper-button-prev {
-            left: 36px;
-        }
 
         .swiper-pagination-bullets {
             bottom: 20px;
@@ -573,7 +576,12 @@
     }
 
     .wr-instagram {
-        padding-bottom: 90px;
+        padding-top: 30px;
+
+        .instagram-img {
+            margin-bottom: 30px;
+        }
+       
         .btn {
             margin-top: 10px;
         }
@@ -601,10 +609,6 @@
 }
 
 @media all and (max-width: 380px) {
-    .wr-about-us {
-        padding-top: 90px;
-    }
-
     .wr-about-us,
     .wr-best-team,
     .wr-instagram,
@@ -622,11 +626,6 @@
             height: 28px;
             font-size: 10px;
         }
-    }
-
-    .wr-achievement {
-        padding-top: 10px;
-        padding-bottom: 40px;
     }
 
     .wr-about-us {
@@ -647,16 +646,11 @@
         }
     }
 
-    .wr-instagram {
-        padding-bottom: 70px;
-        padding-top: 30px;
-    }
-
      // wr-get-in-touch
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
         .section-title {
-            margin-bottom: 50px;
+            padding-bottom: 50px;
         }
     }
 

@@ -8,6 +8,18 @@
             margin-right: 15px;
         }
     }
+
+    .grid-container {
+        padding: 0 10px;
+    }
+
+    .block-contacts {
+        padding-left: 10px;
+    }
+
+    .wr-our-best-work {
+        padding-bottom: 150px;
+    }
 }
 
 @media all and (max-width: 1000px) {
@@ -21,10 +33,10 @@
     }
 
     .wr-our-best-work {
-        padding-top: 135px;
-        padding-bottom: 140px;
+        padding-top: 50px;
+        padding-bottom: 120px;
         .section-title {
-            margin-bottom: 55px;
+            padding-bottom: 50px;
         }
         .work-list {
             margin-bottom: 45px;
@@ -33,10 +45,6 @@
 
     .grid-container {
         grid-template-rows: repeat(2, 310px 190px 310px);
-    }
-
-    footer {
-        padding-top: 0;
     }
 }
 
@@ -62,7 +70,7 @@
 
     .nav {
         @include mobile-navigation;
-        top: -1038px;
+        top: -1145px;
         padding-top: 100px;
     }
 
@@ -85,11 +93,11 @@
 
 @media all and (max-width: 650px) {
     .wr-our-best-work {
-        padding-top: 110px;
+        padding-top: 30px;
         padding-bottom: 80px;
         .section-title {
             font-size: 52px;
-            margin-bottom: 35px;
+            padding-bottom: 35px;
         }
 
         .work-list {
@@ -104,17 +112,13 @@
     .grid-container {
         grid-template-rows: repeat(2,190px 140px 190px);
     }
-
-    .footer {
-        padding-top: 0;
-    }
 }
 
 @media all and (max-width: 540px) {
     .wr-our-best-work {
         .section-title {
             font-size: 46px;
-            margin-bottom: 25px;
+            padding-bottom: 25px;
         }
 
         .work-list { 
@@ -129,21 +133,18 @@
     .grid-container {
         grid-template-rows: repeat(2,170px 120px 170px);
     }
+
+    .footer {
+        padding-top: 0;
+    }
 }
 
 @media all and (max-width: 430px) {
-    .header {
-        .wrapper {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-    }
-
     .wr-our-best-work {
-        padding-top: 90px;
+        padding-top: 20px;
         padding-bottom: 60px;
         .section-title {
-            margin-bottom: 20px;
+            padding-bottom: 20px;
         }
 
         .btn {

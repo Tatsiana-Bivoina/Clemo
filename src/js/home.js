@@ -1,7 +1,7 @@
 import {burger, showGetInTouch1, showGetInTouch, findTextBlock} from '../js/main.min.js';
 
 let swiperWrIntro = new Swiper('.intro-slider', {
-    direction: 'vertical',
+    slidesPerView: 1,
     speed: 1000,
     pagination: {
       el: '.swiper-pagination',
@@ -16,6 +16,14 @@ let swiperWrIntro = new Swiper('.intro-slider', {
       stopOnLastSlide: true,
     },
     grabCursor: true,
+    breakpoints: {
+      240: {
+        direction: 'horizontal',
+      },
+      768: {
+        direction: 'vertical',
+      },
+    }
 });
 
 let swiperWrBestTeam = new Swiper('.best-team-slider', {

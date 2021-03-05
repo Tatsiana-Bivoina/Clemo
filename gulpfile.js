@@ -66,7 +66,7 @@ gulp.task('css-2', function css() {
 });
 
 gulp.task('css-3', function css() {
-    return gulp.src('./src/scss/services.scss')
+    return gulp.src('./src/scss/service.scss')
         .pipe(plumber({
             errorHandler: function (error) {
             console.log(error.message);
