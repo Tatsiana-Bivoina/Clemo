@@ -9,12 +9,8 @@
         }
     }
 
-    .block-what-we-do {
-        padding: 0 10px;
-    }
-
-    .grid-container {
-        padding: 0 10px;
+    .block-creative-kitchen {
+        padding-left: 10px;
     }
 
     .block-contacts {
@@ -23,40 +19,29 @@
 }
 
 @media all and (max-width: 1000px) {
-
-    // wr-home
-    
-    .intro-slider {
-        height: 430px;
-
-        .slide-1,
-        .slide-2,
-        .slide-3 {
-            position: relative;
-        }
-
-        .slide-1-container,
-        .slide-2-container,
-        .slide-3-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        p {
-            margin-top: 0;
-            font-size: 40px;
-        }
-
-        .slide-title {
-            font-size: 20px;
+    // header
+    .header {
+        .wrapper {
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
 
-    // wr-what-we-do
-    .wr-what-we-do,
-    .wr-our-best-work,
+    .wr-creative-kitchen {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    // .wr-achievement
+    .wr-achievement {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+
+    // wr-clients-says
+    .wr-creative-kitchen,
     .wr-clients-says,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
@@ -65,70 +50,6 @@
         }
     }
 
-    .block-what-we-do:nth-child(even),
-    .block-what-we-do:nth-child(odd) {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .block-what-we-do {
-        margin-bottom: 50px;
-    }
-
-    .what-we-do-content {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
-
-        .btn {
-            margin: 0 auto;
-        }
-    }
-
-    .block-title {
-        
-        &::after {
-            left: 50%;
-            transform: translate(-50%);
-        }
-
-        .title {
-            white-space: pre-line;
-            text-align: center;
-            span {
-                font-size: 40px;
-            }
-        }
-    }
-    
-    // wr-our-best-work
-    .wr-our-best-work {
-        .grid-container {
-            grid-template-rows: 300px 1fr 300px;
-        }
-    }
-    
-    // wr-best-team
-    .wr-best-team {
-        .section-title {
-            padding-bottom: 20px;
-        }
-    }
-
-    .slide-container {
-        .name {
-            font-size: 34px;
-        }
-
-        .team-member {
-            width: 155px;
-            height: 155px;
-        }
-    }
-
-    // wr-clients-says
     .clients-text-block, 
     .clients-text-block-off {
         margin-bottom: 10px;
@@ -154,7 +75,6 @@
     }
 
     .wr-get-in-touch-1 {
-
         .icon-check {
             width: 55px;
             height: 45px;
@@ -165,42 +85,17 @@
             margin-bottom: 40px;
         }
     }
-    
 }
-
 
 @media all and (max-width: 780px) {
     body.lock {
         overflow: hidden;
     }
 
-    // wr-home
-    .wr-intro {
-        padding-bottom: 40px;
-    }
-
-    .intro-slider {
-        height: 400px;  
-    }
-
-    .intro-slider,
-    .wr-what-we-do,
-    .wr-our-best-work {
-        .btn {
-            width: 140px;
-            height: 40px;
-            font-size: 14px;
-        }
-    }
-
+    // header
     .header {
         &::before {
             z-index: 4;
-        }
-
-        .wrapper {
-            padding-top: 30px;
-            padding-bottom: 30px;
         }
 
         .logo {
@@ -208,72 +103,71 @@
             font-size: 26px;
         }
     }
+
     .burger-menu {
-        @include burger-menu; 
+        @include burger-menu;
     }
 
     .nav {
         @include mobile-navigation;
         top: -1145px;
-        padding-top: 120px;
+        padding-top: 100px;
     }
 
-    // wr-what-we-do
-    .wr-what-we-do,
-    .wr-best-team,
-    .wr-our-best-work {
+    .creative-kitchen-title {
+        .title {
+            font-size: 30px;
+        }
+    }
+
+    .creative-kitchen-content {
+        p {
+            font-size: 16px;
+        }
+    }
+
+    // WR-ACHIEVEMENT
+    .achievement {
+        .number {
+            font-size: 30px;
+        }
+    }
+
+    // wr-best-price
+    .best-price-block {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .best-price-btn {
+        .btn {
+            width: 140px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+
+    .best-price {
+        p {
+            font-size: 26px;
+        }
+
+        .price {
+            font-size: 36px;
+        }
+    }
+
+    .wr-creative-kitchen,
+    .wr-clients-says,
+    .wr-get-in-touch,
+    .wr-get-in-touch-1 {
         .section-title {
             padding-bottom: 30px;
             font-size: 56px;
         }
     }
 
-    .block-what-we-do:nth-child(even),
-    .block-what-we-do:nth-child(odd) {
-        margin-bottom: 50px;
-    }
-
-    // wr-our-best-work 
-    .wr-our-best-work {
-        .section-title {
-            padding-bottom: 45px;
-        }
-
-        .grid-container {
-            grid-template-rows: 230px 1fr 230px;
-        }
-    }
-
-    // wr-best-team
-    .wr-best-team {
-        padding-top: 20px;
-        padding-bottom: 40px;
-        .section-title {
-            padding-bottom: 0;
-        }
-    }
-
-    .slide-container {
-        .name {
-            font-size: 30px;
-        }
-
-        .team-member {
-            width: 145px;
-            height: 145px;
-        }
-    }
-    
     // .wr-clients-says
-    .wr-clients-says,
-    .wr-get-in-touch,
-    .wr-get-in-touch-1 {
-        .section-title {
-            padding-bottom: 45px;
-            font-size: 56px;
-        }
-    }
-
     .wr-clients-says {
         padding-top: 40px;
         padding-bottom: 50px;
@@ -297,7 +191,7 @@
         margin-right: 40px;
     }
 
-    // wr-get-in-touch
+      // wr-get-in-touch
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
         padding-top: 20px;
@@ -308,13 +202,13 @@
             font-size: 14px;
         }
     }
-
+  
     .adress {
         p {
             font-size: 16px;
         }
     }
-
+  
     .mail, 
     .phone {
         margin-bottom: 20px;
@@ -329,7 +223,7 @@
             height: 35px;
         }
     }
-
+  
     .block-forms {
         .form-item-1 {
             margin-bottom: 20px;
@@ -343,7 +237,7 @@
             margin-bottom: 30px;
         }
     }
-
+  
     .wr-get-in-touch-1 {
         .icon-check {
             width: 40px;
@@ -358,36 +252,12 @@
 }
 
 @media all and (max-width: 650px) {
-    // wr-home
-    .intro-slider {
-        height: 350px; 
-        p {
-            font-size: 30px;
-        }
-
-        .slide-title {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
+    .wr-creative-kitchen {
+        padding-top: 10px;
     }
 
-    // wr-what-we-do
-    .wr-what-we-do {
-        padding-bottom: 40px;
-        P {
-            font-size: 16px;
-        }
-    }
-
-    // wr-our-best-work
-    .wr-our-best-work {
-        padding-bottom: 80px;
-    }
-
-    .wr-what-we-do,
-    .wr-our-best-work,
+    .wr-creative-kitchen,
     .wr-clients-says,
-    .wr-best-team,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
         .section-title {
@@ -395,27 +265,36 @@
         }
     }
 
-    // wr-best-team
-    .best-team-slider {
-        .swiper-button-prev::after, 
-        .swiper-button-next::after {
-            content: none;
+    .creative-kitchen-title {
+        .title {
+            font-size: 22px;
         }
-    } 
-    .slide-container {
-        .name {
-            font-size: 24px;
-        }
+    }
 
-        .work {
-            font-size: 16px;
-            margin-bottom: 40px;
+    .creative-kitchen-content {
+        padding-top: 20px;
+        p {
+            font-size: 14px;
         }
+    }
 
-        .team-member {
-            width: 120px;
-            height: 120px;
-        }
+    .best-price-block {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .best-price,
+    .best-price-btn {
+        width: 100%;
+    }
+
+    .best-price {
+        margin-bottom: 20px;
+    }
+
+    .best-price-btn {
+        justify-content: center;
     }
 
     // wr-clients-says
@@ -447,7 +326,7 @@
     .description {
         font-size: 14px;
     }
-
+    
     // wr-get-in-touch
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
@@ -499,35 +378,8 @@
 }
 
 @media all and (max-width: 540px) {
-    // wr-home
-    .intro-slider {
-        height: 300px; 
-        .swiper-pagination-bullet {
-            width: 8px;
-            height: 8px;
-        }
-
-        p {
-            font-size: 26px;
-        }
-
-        .slide-title {
-            font-size: 16px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            width: 100px;
-            height: 28px;
-            font-size: 10px;
-        }
-    }
-
-    // wr-what-we-do
-    .wr-what-we-do,
-    .wr-our-best-work,
+    .wr-creative-kitchen,
     .wr-clients-says,
-    .wr-best-team,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
         .section-title {
@@ -535,33 +387,75 @@
         }
     }
 
-    // wr-our-best-work
-    .wr-our-best-work {
-        .grid-container {
-            grid-template-rows: 150px 1fr 150px;
+    .wr-creative-kitchen {
+        padding-bottom: 0;
+    }
+
+    .block-creative-kitchen {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .block-image,
+    .creative-kitchen-content {
+        width: 100%;
+    }
+
+    .block-image {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .creative-kitchen-img {
+        width: 100%;
+        margin-bottom: 20px;
+        &::before {
+            content: none;
         }
     }
 
-    // wr-best-team
-    .slide-container {
-        .name {
-            font-size: 18px;
+    .creative-kitchen-content {
+        margin-left: 0;
+        &::before {
+            left: 50%;
+            transform: translate(-50%);
         }
 
-        .work {
+        p {
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: justify;
+        }
+    }
+
+    .creative-kitchen-title {
+        .title {
+            white-space: inherit;
+            margin: 20px 15px;
+            text-align: center;
+        }
+    }
+
+    .achievement {
+        p {
             font-size: 14px;
         }
 
-        .team-member {
-            width: 80px;
-            height: 80px;
+        .number {
+            font-size: 30px;
+            &::before {
+                width: 50px;
+            }
         }
     }
 
-    .best-team-slider {
-        .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
+    .best-price {
+        p {
+            font-size: 24px;
+        }
+
+        .price {
+            font-size: 32px;
         }
     }
 
@@ -655,27 +549,11 @@
     .footer {
         padding-top: 0;
     }
-}  
+}
 
 @media all and (max-width: 430px) {
-    // wr-intro
-    .intro-slider {
-        height: 250px;
-        p {
-            font-size: 22px;
-        }
-
-        .slide-title {
-            font-size: 14px;
-            margin-bottom: 20px;
-        }  
-    }
-
-    // wr-what-we-do
-    .wr-what-we-do,
-    .wr-our-best-work,
+    .wr-creative-kitchen,
     .wr-clients-says,
-    .wr-best-team,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
         .section-title {
@@ -683,62 +561,41 @@
         }
     }
 
-    .what-we-do-content {
+    // .wr-achievement
+    .achievement {
         p {
-            margin-bottom: 10px;
-        }
-        p:last-of-type {
-            margin-bottom: 20px;
-        }
-    }
-
-    .block-title {
-        font-size: 28px;
-        span {
-            font-size: 34px;
-        }
-    }
-
-    // wr-our-best-work
-    .wr-our-best-work {
-        .grid-container {
-            grid-template-rows: 120px 1fr 120px;
-        }
-    }
-
-    // wr-best-team
-    .wr-best-team {
-        padding-bottom: 20px;
-    }
-
-    .slide-container {
-        .name {
-            margin-top: 5px;
-            margin-bottom: 4px;
-            font-size: 16px;
-        }
-
-        .work {
-            margin-bottom: 0;
             font-size: 12px;
         }
 
-        .team-member {
-            width: 90px;
-            height: 90px;
+        .number {
+            font-size: 20px;
+            &::before {
+                width: 30px;
+            }
         }
     }
 
-    .best-team-slider {
-        padding-bottom: 25px;
+    // wr-best-price
+    .best-price-block {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
-        .swiper-pagination-bullets {
-            bottom: 20px;
+    .best-price {
+        p {
+            font-size: 20px;
         }
-        
-        .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
+
+        .price {
+            font-size: 28px;
+        }
+    }
+
+    .best-price-btn {
+        .btn {
+            width: 100px;
+            height: 28px;
+            font-size: 10px;
         }
     }
 
@@ -775,43 +632,8 @@
 }
 
 @media all and (max-width: 380px) {
-    // wr-intro
-    .intro-slider {
-        height: 220px;
-        p {
-            font-size: 20px;
-        }
-
-        .slide-title {
-            font-size: 12px;
-            margin-bottom: 20px;
-        }  
-
-        .btn {
-            width: 80px;
-            height: 24px;
-            font-size: 9px;
-        }
-    }
-
-    // wr-what-we-do, wr-our-best-work
-    .wr-what-we-do,
-    .wr-our-best-work {
-        .btn {
-            width: 100px;
-            height: 28px;
-            font-size: 10px;
-        }
-    }
-
-    .wr-our-best-work {
-        padding-bottom: 60px;
-    }
-
-    .wr-what-we-do,
-    .wr-our-best-work,
+    .wr-creative-kitchen,
     .wr-clients-says,
-    .wr-best-team,
     .wr-get-in-touch,
     .wr-get-in-touch-1 {
         .section-title {
@@ -819,10 +641,23 @@
         }
     }
 
-    // .wr-clients-says
-    .wr-clients-says {
-        .section-title {
-            padding-bottom: 30px;
+    .achievement {
+        p {
+            font-size: 10px;
+        }
+
+        .number {
+            font-size: 16px;
+        }
+    }
+
+    .best-price {
+        p {
+            font-size: 18px;
+        }
+
+        .price {
+            font-size: 26px;
         }
     }
 

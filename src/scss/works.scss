@@ -9,19 +9,15 @@
 // header
 .header {
     border-bottom: 1px solid $color-grey;
-
-    .wrapper {
-        padding-bottom: 40px;
-    }
 }
 
 // WR-OUR-BEST-WORK
 .wr-our-best-work {
-    padding-top: 229px;
+    padding-top: 72px;
     padding-bottom: 200px;
     .section-title {
         @include block-title;
-        margin-bottom: 66px;
+        padding-bottom: 60px;
     }
 }
 

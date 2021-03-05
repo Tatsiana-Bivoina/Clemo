@@ -1,4 +1,9 @@
-import {findTextBlock, showGetInTouch1, showGetInTouch} from '../js/main.min.js';
+import {burger, findTextBlock, showGetInTouch1, showGetInTouch} from '../js/main.min.js';
+
+
+// ..............................burger-menu.......................
+let burgerMenu = document.querySelector('.burger-menu');
+burgerMenu.addEventListener('click', burger);
 
 // .................................slider ClientsSays....................................
 
@@ -28,3 +33,32 @@ blockForm1.addEventListener('submit', showGetInTouch1);
 // ................................block get-in-touch1..............................
 let blockForm2 = document.getElementById('form-2');
 blockForm2.addEventListener('submit', showGetInTouch);
+
+
+let swiperWrClientsSays = new Swiper('.clients-says-slider', {
+    slidesPerView: 4,
+    pagination: {
+     el: '.swiper-pagination',
+     clickable: true,
+     dynamicBullets: true,
+     dynamicMainBullets: 3,
+    },
+    grabCursor: true,
+    breakpoints: {
+      240: {
+        slidesPerView: 1,
+      },
+      380: {
+        slidesPerView: 1,
+      },
+      430: {
+        slidesPerView: 2,
+      },
+      540: {
+        slidesPerView: 3,
+      },
+      1000: {
+        slidesPerView: 4,  
+      }
+    }
+});
